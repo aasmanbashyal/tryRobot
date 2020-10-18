@@ -9,7 +9,7 @@
 static JoyStick_Handle gJoyStick;
 static JoyStick_Data gNull_JData;
 static uint8_t gRx2Data;
-bool pneumaticState = 0;
+bool blueLedState = 1;
 void fill_JoyData(JoyStick_Data *joy, uint8_t data[NUM_JOYSTICK_BYTES]);
 
 JoyStick joystick(&huart2);
@@ -72,13 +72,20 @@ void fill_JoyData(JoyStick_Data *joy, uint8_t data[NUM_JOYSTICK_BYTES])
 
 void Robot_task()
 {
+        if (blueLedState == 0)
+        {
+                HAL_GPIO_WritePin(ledStripRed_Port, ledStripRed_Pin, GPIO_PIN_RESET);
+                HAL_GPIO_WritePin(ledStripBlue_Port, ledStripBlue_Pin, GPIO_PIN_SET);
+                blueLedState = 1;
+        }
+
         if (gJoy.lt == 0)
                 set_Omega(30);
 
         if (gJoy.lt != 0)
                 set_Omega(50); //50-250/gJOy.lt*30
 
-        if (gJoy.button1 == 64) //b
+        if (gJoy.button1 == 64) //y b=16 x=128 a = 32
         {
                 HAL_GPIO_WritePin(pneumatic1_GPIO_Port, pneumatic1_Pin, GPIO_PIN_SET);
         }
@@ -87,6 +94,19 @@ void Robot_task()
         {
                 HAL_GPIO_WritePin(pneumatic1_GPIO_Port, pneumatic1_Pin, GPIO_PIN_RESET);
         }
+
+        if (gJoy.button1 == 128) //y b=16 x=128 a = 32
+        {
+                // HAL_UART_Transmit(&huart4, (uint8_t *)"x", 1, 10);
+                HAL_GPIO_WritePin(ledStripRed_Port, ledStripRed_Pin, GPIO_PIN_SET);
+                HAL_GPIO_WritePin(ledStripBlue_Port, ledStripBlue_Pin, GPIO_PIN_RESET);
+        }
+
+        if (gJoy.button1 == 16) //A
+        {
+                blueLedState = 0;
+        }
+
         if (gJoy.l_haty <= 127 && gJoy.l_haty != 0 && gJoy.r_hatx <= 127 && gJoy.r_hatx != 0)
                 forward_left();
 

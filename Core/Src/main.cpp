@@ -108,6 +108,7 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
+     HAL_GPIO_WritePin(ledGreen_GPIO_Port, ledGreen_Pin, GPIO_PIN_SET);
 
     /* USER CODE BEGIN 3 */
     play();

@@ -53,11 +53,13 @@ static void set_motorOmega(Motor_config *m, float omega)
 
 void motor ::motor_input(float setpoint, float iOmega)
 {
-        printf("encoder _Measured Omega = %f \n", iOmega);
+        // printf("encoder _Measured Omega = %f \n", iOmega);
         float computed_omega = Spid.computePID(setpoint, iOmega);
-        printf("after_pid_computed_omega = %f \n", computed_omega);
+        // printf("after_pid_computed_omega = %f \n", computed_omega);
 
         this->set_omega(computed_omega);
+        // this->set_omega(30);
+
 }
 
 void motor::set_omega(float omega)

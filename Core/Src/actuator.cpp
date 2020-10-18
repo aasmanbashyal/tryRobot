@@ -13,8 +13,15 @@ float velocity = 30;
 extern JoyStick joystick;
 void play(void)
 {
+     HAL_GPIO_WritePin(ledOrange_GPIO_Port, ledOrange_Pin, GPIO_PIN_SET);
+    // forward();
     if ((HAL_GetTick() - time) >= 10)
     {
+        // printf("hELLO HAL GET TICK %ld",time);
+
+        // HAL_GPIO_WritePin(ledRed_GPIO_P0ort, ledRed_Pin, GPIO_PIN_SET);
+        // HAL_GPIO_WritePin(ledGreen_GPIO_Port, ledGreen_Pin, GPIO_PIN_RESET);
+
         time = HAL_GetTick();
         Robot_task();
     }
@@ -39,7 +46,7 @@ void calculate_wheel_velocity()
 
     for (int i = 0; i < 4; i++)
     {
-        printf("set motor velocity %f \n", velocity_motor[i]);
+        // printf("set motor velocity %f \n", velocity_motor[i]);
         gMotor[i].motor_input(velocity_motor[i], get_data(i)); //pid
     }
 }

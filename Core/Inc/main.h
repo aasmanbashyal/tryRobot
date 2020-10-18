@@ -22,14 +22,14 @@
 /* Define to prevent recursive inclusion -------------------------------------*/
 #ifndef __MAIN_H
 #define __MAIN_H
-
+// #include <stdint.h>
 #ifdef __cplusplus
 extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f4xx_hal.h"
-
+// #include "stm32f4xx_hal_rcc.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -68,6 +68,15 @@ void Error_Handler(void);
 #define ledRed_GPIO_Port GPIOD
 #define ledBlue_Pin GPIO_PIN_15
 #define ledBlue_GPIO_Port GPIOD
+#define ledStripRed_Pin GPIO_PIN_2
+#define ledStripRed_Port GPIOA
+#define ledStripBlue_Pin GPIO_PIN_1
+#define ledStripBlue_Port GPIOC
+#define ledStripGreen_Pin GPIO_PIN_2
+#define ledStripGreen_Port GPIOC
+
+
+
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

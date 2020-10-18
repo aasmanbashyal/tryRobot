@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s 			page 1
+ARM GAS  C:\Users\one\AppData\Local\Temp\cco6VL2H.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -20,13 +20,15 @@ ARM GAS  C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s 			page 1
   17              		.section	.text._ZN8JoyStickD2Ev,"axG",%progbits,_ZN8JoyStickD5Ev,comdat
   18              		.align	1
   19              		.weak	_ZN8JoyStickD2Ev
-  20              		.syntax unified
-  21              		.thumb
-  22              		.thumb_func
-  23              		.fpu fpv4-sp-d16
-  25              	_ZN8JoyStickD2Ev:
-  26              	.LFB140:
-  27              		.file 1 "Core/Inc/joystick.h"
+  20              		.arch armv7e-m
+  21              		.syntax unified
+  22              		.thumb
+  23              		.thumb_func
+  24              		.fpu fpv4-sp-d16
+  26              	_ZN8JoyStickD2Ev:
+  27              	.LVL0:
+  28              	.LFB140:
+  29              		.file 1 "Core/Inc/joystick.h"
    1:Core/Inc/joystick.h **** #ifndef _JOYSTICK_H_
    2:Core/Inc/joystick.h **** #define _JOYSTICK_H_
    3:Core/Inc/joystick.h **** #include "usart.h"
@@ -56,11 +58,11 @@ ARM GAS  C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s 			page 1
   27:Core/Inc/joystick.h ****         uint8_t lt;
   28:Core/Inc/joystick.h ****         uint8_t rt;
   29:Core/Inc/joystick.h ****         uint8_t l_hatx;
+ARM GAS  C:\Users\one\AppData\Local\Temp\cco6VL2H.s 			page 2
+
+
   30:Core/Inc/joystick.h ****         uint8_t l_haty;
   31:Core/Inc/joystick.h ****         uint8_t r_hatx;
-ARM GAS  C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s 			page 2
-
-
   32:Core/Inc/joystick.h ****         uint8_t r_haty;
   33:Core/Inc/joystick.h **** };
   34:Core/Inc/joystick.h **** 
@@ -82,53 +84,82 @@ ARM GAS  C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s 			page 1
   50:Core/Inc/joystick.h ****         JoyStick &operator=(JoyStick &&) = default;
   51:Core/Inc/joystick.h ****         JoyStick &operator=(const JoyStick &) = default;
   52:Core/Inc/joystick.h ****         ~JoyStick() {}
-  28              		.loc 1 52 0
-  29              		.cfi_startproc
-  30              		@ args = 0, pretend = 0, frame = 0
-  31              		@ frame_needed = 0, uses_anonymous_args = 0
-  32              		@ link register save eliminated.
-  33              	.LVL0:
-  34              		.loc 1 52 0
-  35 0000 7047     		bx	lr
-  36              		.cfi_endproc
-  37              	.LFE140:
-  39              		.weak	_ZN8JoyStickD1Ev
-  40              		.thumb_set _ZN8JoyStickD1Ev,_ZN8JoyStickD2Ev
-  41              		.section	.text._ZN15JoyStick_HandleD2Ev,"axG",%progbits,_ZN15JoyStick_HandleD5Ev,comdat
-  42              		.align	1
-  43              		.weak	_ZN15JoyStick_HandleD2Ev
-  44              		.syntax unified
-  45              		.thumb
-  46              		.thumb_func
-  47              		.fpu fpv4-sp-d16
-  49              	_ZN15JoyStick_HandleD2Ev:
-  50              	.LFB402:
+  30              		.loc 1 52 9 view -0
+  31              		.cfi_startproc
+  32              		@ args = 0, pretend = 0, frame = 0
+  33              		@ frame_needed = 0, uses_anonymous_args = 0
+  34              		@ link register save eliminated.
+  35              		.loc 1 52 22 is_stmt 0 view .LVU1
+  36 0000 7047     		bx	lr
+  37              		.cfi_endproc
+  38              	.LFE140:
+  40              		.weak	_ZN8JoyStickD1Ev
+  41              		.thumb_set _ZN8JoyStickD1Ev,_ZN8JoyStickD2Ev
+  42              		.section	.text._ZN15JoyStick_HandleD2Ev,"axG",%progbits,_ZN15JoyStick_HandleD5Ev,comdat
+  43              		.align	1
+  44              		.weak	_ZN15JoyStick_HandleD2Ev
+  45              		.syntax unified
+  46              		.thumb
+  47              		.thumb_func
+  48              		.fpu fpv4-sp-d16
+  50              	_ZN15JoyStick_HandleD2Ev:
+  51              	.LVL1:
+  52              	.LFB402:
   35:Core/Inc/joystick.h **** {
-  51              		.loc 1 35 0
-  52              		.cfi_startproc
-  53              		@ args = 0, pretend = 0, frame = 0
-  54              		@ frame_needed = 0, uses_anonymous_args = 0
-  55              		@ link register save eliminated.
-  56              	.LVL1:
-  35:Core/Inc/joystick.h **** {
-  57              		.loc 1 35 0
-  58 0000 7047     		bx	lr
-  59              		.cfi_endproc
-  60              	.LFE402:
-  62              		.weak	_ZN15JoyStick_HandleD1Ev
-  63              		.thumb_set _ZN15JoyStick_HandleD1Ev,_ZN15JoyStick_HandleD2Ev
-  64              		.section	.text._Z41__static_initialization_and_destruction_0ii,"ax",%progbits
-ARM GAS  C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s 			page 3
+  53              		.loc 1 35 8 is_stmt 1 view -0
+  54              		.cfi_startproc
+  55              		@ args = 0, pretend = 0, frame = 0
+  56              		@ frame_needed = 0, uses_anonymous_args = 0
+  57              		@ link register save eliminated.
+  58              	.LBB18:
+  59              	.LBI18:
+  60              		.file 2 "Core/Inc/container/queue_custom.h"
+   1:Core/Inc/container/queue_custom.h **** /*
+   2:Core/Inc/container/queue_custom.h ****  * queue.h
+   3:Core/Inc/container/queue_custom.h ****  * 
+   4:Core/Inc/container/queue_custom.h ****  * Created : 11/16/2018
+ARM GAS  C:\Users\one\AppData\Local\Temp\cco6VL2H.s 			page 3
 
 
-  65              		.align	1
-  66              		.syntax unified
-  67              		.thumb
-  68              		.thumb_func
-  69              		.fpu fpv4-sp-d16
-  71              	_Z41__static_initialization_and_destruction_0ii:
-  72              	.LFB400:
-  73              		.file 2 "Core/Src/joystick.cpp"
+   5:Core/Inc/container/queue_custom.h ****  *  Author : n-is
+   6:Core/Inc/container/queue_custom.h ****  *   email : 073bex422.nischal@pcampus.edu.np
+   7:Core/Inc/container/queue_custom.h ****  */
+   8:Core/Inc/container/queue_custom.h **** 
+   9:Core/Inc/container/queue_custom.h **** #ifndef _QUEUE_CUSTOM_H_
+  10:Core/Inc/container/queue_custom.h **** #define _QUEUE_CUSTOM_H_
+  11:Core/Inc/container/queue_custom.h **** 
+  12:Core/Inc/container/queue_custom.h **** #include "stm32f4xx_hal.h"
+  13:Core/Inc/container/queue_custom.h **** 
+  14:Core/Inc/container/queue_custom.h **** template <class T, size_t q_size>
+  15:Core/Inc/container/queue_custom.h **** class Queue
+  16:Core/Inc/container/queue_custom.h **** {
+  17:Core/Inc/container/queue_custom.h **** public:
+  18:Core/Inc/container/queue_custom.h ****         Queue() : head_(0), tail_(0), curr_size_(0) {}
+  19:Core/Inc/container/queue_custom.h ****         Queue(Queue &&) = default;
+  20:Core/Inc/container/queue_custom.h ****         Queue(const Queue &) = default;
+  21:Core/Inc/container/queue_custom.h ****         Queue &operator=(Queue &&) = default;
+  22:Core/Inc/container/queue_custom.h ****         Queue &operator=(const Queue &) = default;
+  23:Core/Inc/container/queue_custom.h ****         ~Queue() {}
+  61              		.loc 2 23 9 view .LVU3
+  62              		.loc 2 23 9 is_stmt 0 view .LVU4
+  63              	.LBE18:
+  35:Core/Inc/joystick.h **** {
+  64              		.loc 1 35 8 view .LVU5
+  65 0000 7047     		bx	lr
+  66              		.cfi_endproc
+  67              	.LFE402:
+  69              		.weak	_ZN15JoyStick_HandleD1Ev
+  70              		.thumb_set _ZN15JoyStick_HandleD1Ev,_ZN15JoyStick_HandleD2Ev
+  71              		.section	.text._Z41__static_initialization_and_destruction_0ii,"ax",%progbits
+  72              		.align	1
+  73              		.syntax unified
+  74              		.thumb
+  75              		.thumb_func
+  76              		.fpu fpv4-sp-d16
+  78              	_Z41__static_initialization_and_destruction_0ii:
+  79              	.LVL2:
+  80              	.LFB400:
+  81              		.file 3 "Core/Src/joystick.cpp"
    1:Core/Src/joystick.cpp **** #include "joystick.h"
    2:Core/Src/joystick.cpp **** #include "actuator.h"
    3:Core/Src/joystick.cpp **** #include "array.h"
@@ -140,13 +171,16 @@ ARM GAS  C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s 			page 1
    9:Core/Src/joystick.cpp **** static JoyStick_Handle gJoyStick;
   10:Core/Src/joystick.cpp **** static JoyStick_Data gNull_JData;
   11:Core/Src/joystick.cpp **** static uint8_t gRx2Data;
-  12:Core/Src/joystick.cpp **** bool pneumaticState = 0;
+  12:Core/Src/joystick.cpp **** bool blueLedState = 1;
   13:Core/Src/joystick.cpp **** void fill_JoyData(JoyStick_Data *joy, uint8_t data[NUM_JOYSTICK_BYTES]);
   14:Core/Src/joystick.cpp **** 
   15:Core/Src/joystick.cpp **** JoyStick joystick(&huart2);
   16:Core/Src/joystick.cpp **** struct JoyStick_Data gJoy;
   17:Core/Src/joystick.cpp **** uint8_t gJoy_Data_Arr[NUM_JOYSTICK_BYTES];
   18:Core/Src/joystick.cpp **** static bool gStart_Byte_Rx2 = false;
+ARM GAS  C:\Users\one\AppData\Local\Temp\cco6VL2H.s 			page 4
+
+
   19:Core/Src/joystick.cpp **** static uint16_t gRx2_Data_num = 0;
   20:Core/Src/joystick.cpp **** 
   21:Core/Src/joystick.cpp **** void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
@@ -178,9 +212,6 @@ ARM GAS  C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s 			page 1
   47:Core/Src/joystick.cpp **** int JoyStick::init()
   48:Core/Src/joystick.cpp **** {
   49:Core/Src/joystick.cpp ****         gJoyStick.huart = huart_;
-ARM GAS  C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s 			page 4
-
-
   50:Core/Src/joystick.cpp ****         gNull_JData.button1 = 0;
   51:Core/Src/joystick.cpp ****         gNull_JData.button2 = 0;
   52:Core/Src/joystick.cpp ****         gNull_JData.lt = 0;
@@ -206,764 +237,1025 @@ ARM GAS  C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s 			page 1
   72:Core/Src/joystick.cpp **** 
   73:Core/Src/joystick.cpp **** void Robot_task()
   74:Core/Src/joystick.cpp **** {
-  75:Core/Src/joystick.cpp ****         if (gJoy.lt == 0)
-  76:Core/Src/joystick.cpp ****                 set_Omega(30);
-  77:Core/Src/joystick.cpp **** 
-  78:Core/Src/joystick.cpp ****         if (gJoy.lt != 0)
-  79:Core/Src/joystick.cpp ****                 set_Omega(50); //50-250/gJOy.lt*30
-  80:Core/Src/joystick.cpp **** 
-  81:Core/Src/joystick.cpp ****         if (gJoy.button1 == 64) //b
-  82:Core/Src/joystick.cpp ****         {
-  83:Core/Src/joystick.cpp ****                 HAL_GPIO_WritePin(pneumatic1_GPIO_Port, pneumatic1_Pin, GPIO_PIN_SET);
-  84:Core/Src/joystick.cpp ****         }
-  85:Core/Src/joystick.cpp **** 
-  86:Core/Src/joystick.cpp ****         if (gJoy.button1 == 32) //A
-  87:Core/Src/joystick.cpp ****         {
-  88:Core/Src/joystick.cpp ****                 HAL_GPIO_WritePin(pneumatic1_GPIO_Port, pneumatic1_Pin, GPIO_PIN_RESET);
-  89:Core/Src/joystick.cpp ****         }
-  90:Core/Src/joystick.cpp ****         if (gJoy.l_haty <= 127 && gJoy.l_haty != 0 && gJoy.r_hatx <= 127 && gJoy.r_hatx != 0)
-  91:Core/Src/joystick.cpp ****                 forward_left();
+  75:Core/Src/joystick.cpp ****         if (blueLedState == 0)
+ARM GAS  C:\Users\one\AppData\Local\Temp\cco6VL2H.s 			page 5
+
+
+  76:Core/Src/joystick.cpp ****         {
+  77:Core/Src/joystick.cpp ****                 HAL_GPIO_WritePin(ledStripRed_Port, ledStripRed_Pin, GPIO_PIN_RESET);
+  78:Core/Src/joystick.cpp ****                 HAL_GPIO_WritePin(ledStripBlue_Port, ledStripBlue_Pin, GPIO_PIN_SET);
+  79:Core/Src/joystick.cpp ****                 blueLedState = 1;
+  80:Core/Src/joystick.cpp ****         }
+  81:Core/Src/joystick.cpp **** 
+  82:Core/Src/joystick.cpp ****         if (gJoy.lt == 0)
+  83:Core/Src/joystick.cpp ****                 set_Omega(30);
+  84:Core/Src/joystick.cpp **** 
+  85:Core/Src/joystick.cpp ****         if (gJoy.lt != 0)
+  86:Core/Src/joystick.cpp ****                 set_Omega(50); //50-250/gJOy.lt*30
+  87:Core/Src/joystick.cpp **** 
+  88:Core/Src/joystick.cpp ****         if (gJoy.button1 == 64) //y b=16 x=128 a = 32
+  89:Core/Src/joystick.cpp ****         {
+  90:Core/Src/joystick.cpp ****                 HAL_GPIO_WritePin(pneumatic1_GPIO_Port, pneumatic1_Pin, GPIO_PIN_SET);
+  91:Core/Src/joystick.cpp ****         }
   92:Core/Src/joystick.cpp **** 
-  93:Core/Src/joystick.cpp ****         else if (gJoy.l_haty <= 127 && gJoy.l_haty != 0 && gJoy.r_hatx >= 128)
-  94:Core/Src/joystick.cpp ****                 forward_right();
-  95:Core/Src/joystick.cpp **** 
-  96:Core/Src/joystick.cpp ****         else if (gJoy.l_haty >= 128 && gJoy.r_hatx <= 127 && gJoy.r_hatx != 0)
-  97:Core/Src/joystick.cpp ****                 back_left();
-  98:Core/Src/joystick.cpp **** 
-  99:Core/Src/joystick.cpp ****         else if (gJoy.l_haty >= 128 && gJoy.r_hatx >= 128)
- 100:Core/Src/joystick.cpp ****                 back_right();
- 101:Core/Src/joystick.cpp **** 
- 102:Core/Src/joystick.cpp ****         else if (gJoy.l_haty <= 127 && gJoy.l_haty != 0)
- 103:Core/Src/joystick.cpp ****                 forward();
- 104:Core/Src/joystick.cpp **** 
- 105:Core/Src/joystick.cpp ****         else if (gJoy.l_haty >= 128)
- 106:Core/Src/joystick.cpp ****                 back();
-ARM GAS  C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s 			page 5
-
-
- 107:Core/Src/joystick.cpp **** 
- 108:Core/Src/joystick.cpp ****         else if (gJoy.r_hatx <= 127 && gJoy.r_hatx != 0)
- 109:Core/Src/joystick.cpp ****                 left();
- 110:Core/Src/joystick.cpp **** 
- 111:Core/Src/joystick.cpp ****         else if (gJoy.r_hatx >= 128)
- 112:Core/Src/joystick.cpp ****                 right();
- 113:Core/Src/joystick.cpp **** 
- 114:Core/Src/joystick.cpp ****         else if (gJoy.button1 == 1)
- 115:Core/Src/joystick.cpp ****                 clockwise();
- 116:Core/Src/joystick.cpp **** 
- 117:Core/Src/joystick.cpp ****         else if (gJoy.button1 == 2)
- 118:Core/Src/joystick.cpp ****                 anticlockwise();
- 119:Core/Src/joystick.cpp **** 
- 120:Core/Src/joystick.cpp ****         else
- 121:Core/Src/joystick.cpp ****                 stop();
- 122:Core/Src/joystick.cpp **** }
-  74              		.loc 2 122 0
-  75              		.cfi_startproc
-  76              		@ args = 0, pretend = 0, frame = 0
-  77              		@ frame_needed = 0, uses_anonymous_args = 0
-  78              	.LVL2:
-  79 0000 0128     		cmp	r0, #1
-  80 0002 00D0     		beq	.L9
-  81              	.L6:
-  82 0004 7047     		bx	lr
-  83              	.L9:
-  84              		.loc 2 122 0 is_stmt 0 discriminator 1
-  85 0006 4FF6FF73 		movw	r3, #65535
-  86 000a 9942     		cmp	r1, r3
-  87 000c FAD1     		bne	.L6
-  88              		.loc 2 122 0
-  89 000e 10B5     		push	{r4, lr}
-  90              	.LCFI0:
-  91              		.cfi_def_cfa_offset 8
-  92              		.cfi_offset 4, -8
-  93              		.cfi_offset 14, -4
-  94              	.LVL3:
-  95              	.LBB18:
-  96              	.LBB19:
-  97              	.LBB20:
-  98              	.LBB21:
-  99              		.file 3 "Core/Inc/container/queue_custom.h"
-   1:Core/Inc/container/queue_custom.h **** /*
-   2:Core/Inc/container/queue_custom.h ****  * queue.h
-   3:Core/Inc/container/queue_custom.h ****  * 
-   4:Core/Inc/container/queue_custom.h ****  * Created : 11/16/2018
-   5:Core/Inc/container/queue_custom.h ****  *  Author : n-is
-   6:Core/Inc/container/queue_custom.h ****  *   email : 073bex422.nischal@pcampus.edu.np
-   7:Core/Inc/container/queue_custom.h ****  */
-   8:Core/Inc/container/queue_custom.h **** 
-   9:Core/Inc/container/queue_custom.h **** #ifndef _QUEUE_CUSTOM_H_
-  10:Core/Inc/container/queue_custom.h **** #define _QUEUE_CUSTOM_H_
-  11:Core/Inc/container/queue_custom.h **** 
-  12:Core/Inc/container/queue_custom.h **** #include "stm32f4xx_hal.h"
-  13:Core/Inc/container/queue_custom.h **** 
-  14:Core/Inc/container/queue_custom.h **** template <class T, size_t q_size>
-  15:Core/Inc/container/queue_custom.h **** class Queue
-ARM GAS  C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s 			page 6
-
-
-  16:Core/Inc/container/queue_custom.h **** {
-  17:Core/Inc/container/queue_custom.h **** public:
-  18:Core/Inc/container/queue_custom.h ****         Queue() : head_(0), tail_(0), curr_size_(0) {}
- 100              		.loc 3 18 0 is_stmt 1
- 101 0010 0848     		ldr	r0, .L10
- 102              	.LVL4:
- 103 0012 0023     		movs	r3, #0
- 104 0014 4360     		str	r3, [r0, #4]
- 105 0016 8360     		str	r3, [r0, #8]
- 106 0018 C360     		str	r3, [r0, #12]
- 107              	.LVL5:
- 108              	.LBE21:
- 109              	.LBE20:
- 110              	.LBE19:
- 111              	.LBE18:
-   9:Core/Src/joystick.cpp **** static JoyStick_Data gNull_JData;
- 112              		.loc 2 9 0
- 113 001a 074C     		ldr	r4, .L10+4
- 114 001c 2246     		mov	r2, r4
- 115 001e 0749     		ldr	r1, .L10+8
- 116              	.LVL6:
- 117 0020 FFF7FEFF 		bl	__aeabi_atexit
- 118              	.LVL7:
- 119              	.LBB22:
- 120              	.LBB23:
- 121              	.LBB24:
-  46:Core/Inc/joystick.h ****         }
- 122              		.loc 1 46 0
- 123 0024 0648     		ldr	r0, .L10+12
- 124 0026 074B     		ldr	r3, .L10+16
- 125 0028 0360     		str	r3, [r0]
- 126              	.LVL8:
- 127              	.LBE24:
- 128              	.LBE23:
- 129              	.LBE22:
-  15:Core/Src/joystick.cpp **** struct JoyStick_Data gJoy;
- 130              		.loc 2 15 0
- 131 002a 2246     		mov	r2, r4
- 132 002c 0649     		ldr	r1, .L10+20
- 133 002e FFF7FEFF 		bl	__aeabi_atexit
- 134              	.LVL9:
- 135              		.loc 2 122 0
- 136 0032 10BD     		pop	{r4, pc}
- 137              	.L11:
- 138              		.align	2
- 139              	.L10:
- 140 0034 00000000 		.word	.LANCHOR0
- 141 0038 00000000 		.word	__dso_handle
- 142 003c 00000000 		.word	_ZN15JoyStick_HandleD1Ev
- 143 0040 00000000 		.word	.LANCHOR1
- 144 0044 00000000 		.word	huart2
- 145 0048 00000000 		.word	_ZN8JoyStickD1Ev
- 146              		.cfi_endproc
- 147              	.LFE400:
- 149              		.section	.text._ZN8JoyStick4initEv,"ax",%progbits
- 150              		.align	1
- 151              		.global	_ZN8JoyStick4initEv
-ARM GAS  C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s 			page 7
-
-
- 152              		.syntax unified
- 153              		.thumb
- 154              		.thumb_func
- 155              		.fpu fpv4-sp-d16
- 157              	_ZN8JoyStick4initEv:
- 158              	.LFB391:
-  48:Core/Src/joystick.cpp ****         gJoyStick.huart = huart_;
- 159              		.loc 2 48 0
- 160              		.cfi_startproc
- 161              		@ args = 0, pretend = 0, frame = 0
- 162              		@ frame_needed = 0, uses_anonymous_args = 0
- 163              	.LVL10:
- 164 0000 08B5     		push	{r3, lr}
- 165              	.LCFI1:
- 166              		.cfi_def_cfa_offset 8
- 167              		.cfi_offset 3, -8
- 168              		.cfi_offset 14, -4
-  49:Core/Src/joystick.cpp ****         gNull_JData.button1 = 0;
- 169              		.loc 2 49 0
- 170 0002 0268     		ldr	r2, [r0]
- 171 0004 044B     		ldr	r3, .L14
- 172 0006 1A60     		str	r2, [r3]
-  57:Core/Src/joystick.cpp ****         return 0;
- 173              		.loc 2 57 0
- 174 0008 0122     		movs	r2, #1
- 175 000a 0449     		ldr	r1, .L14+4
- 176 000c 0068     		ldr	r0, [r0]
- 177              	.LVL11:
- 178 000e FFF7FEFF 		bl	HAL_UART_Receive_DMA
- 179              	.LVL12:
-  59:Core/Src/joystick.cpp **** 
- 180              		.loc 2 59 0
- 181 0012 0020     		movs	r0, #0
- 182 0014 08BD     		pop	{r3, pc}
- 183              	.L15:
- 184 0016 00BF     		.align	2
- 185              	.L14:
- 186 0018 00000000 		.word	.LANCHOR0
- 187 001c 00000000 		.word	.LANCHOR2
- 188              		.cfi_endproc
- 189              	.LFE391:
- 191              		.section	.text._Z12fill_JoyDataP13JoyStick_DataPh,"ax",%progbits
- 192              		.align	1
- 193              		.global	_Z12fill_JoyDataP13JoyStick_DataPh
- 194              		.syntax unified
- 195              		.thumb
- 196              		.thumb_func
- 197              		.fpu fpv4-sp-d16
- 199              	_Z12fill_JoyDataP13JoyStick_DataPh:
- 200              	.LFB392:
-  62:Core/Src/joystick.cpp ****         joy->button1 = data[0];
- 201              		.loc 2 62 0
- 202              		.cfi_startproc
- 203              		@ args = 0, pretend = 0, frame = 0
- 204              		@ frame_needed = 0, uses_anonymous_args = 0
- 205              		@ link register save eliminated.
- 206              	.LVL13:
-ARM GAS  C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s 			page 8
-
-
-  63:Core/Src/joystick.cpp ****         joy->button2 = data[1];
- 207              		.loc 2 63 0
- 208 0000 0B78     		ldrb	r3, [r1]	@ zero_extendqisi2
- 209 0002 0370     		strb	r3, [r0]
-  64:Core/Src/joystick.cpp ****         joy->lt = data[2];
- 210              		.loc 2 64 0
- 211 0004 4B78     		ldrb	r3, [r1, #1]	@ zero_extendqisi2
- 212 0006 4370     		strb	r3, [r0, #1]
-  65:Core/Src/joystick.cpp ****         joy->rt = data[3];
- 213              		.loc 2 65 0
- 214 0008 8B78     		ldrb	r3, [r1, #2]	@ zero_extendqisi2
- 215 000a 8370     		strb	r3, [r0, #2]
-  66:Core/Src/joystick.cpp ****         joy->l_hatx = data[4];
- 216              		.loc 2 66 0
- 217 000c CB78     		ldrb	r3, [r1, #3]	@ zero_extendqisi2
- 218 000e C370     		strb	r3, [r0, #3]
-  67:Core/Src/joystick.cpp ****         joy->l_haty = data[5];
- 219              		.loc 2 67 0
- 220 0010 0B79     		ldrb	r3, [r1, #4]	@ zero_extendqisi2
- 221 0012 0371     		strb	r3, [r0, #4]
-  68:Core/Src/joystick.cpp ****         joy->r_hatx = data[6];
- 222              		.loc 2 68 0
- 223 0014 4B79     		ldrb	r3, [r1, #5]	@ zero_extendqisi2
- 224 0016 4371     		strb	r3, [r0, #5]
-  69:Core/Src/joystick.cpp ****         joy->r_haty = data[7];
- 225              		.loc 2 69 0
- 226 0018 8B79     		ldrb	r3, [r1, #6]	@ zero_extendqisi2
- 227 001a 8371     		strb	r3, [r0, #6]
-  70:Core/Src/joystick.cpp **** }
- 228              		.loc 2 70 0
- 229 001c CB79     		ldrb	r3, [r1, #7]	@ zero_extendqisi2
- 230 001e C371     		strb	r3, [r0, #7]
-  71:Core/Src/joystick.cpp **** 
- 231              		.loc 2 71 0
- 232 0020 7047     		bx	lr
- 233              		.cfi_endproc
- 234              	.LFE392:
- 236              		.section	.text.HAL_UART_RxCpltCallback,"ax",%progbits
- 237              		.align	1
- 238              		.global	HAL_UART_RxCpltCallback
- 239              		.syntax unified
- 240              		.thumb
- 241              		.thumb_func
- 242              		.fpu fpv4-sp-d16
- 244              	HAL_UART_RxCpltCallback:
- 245              	.LFB390:
-  22:Core/Src/joystick.cpp ****         __HAL_UART_FLUSH_DRREGISTER(gJoyStick.huart);
- 246              		.loc 2 22 0
- 247              		.cfi_startproc
- 248              		@ args = 0, pretend = 0, frame = 0
- 249              		@ frame_needed = 0, uses_anonymous_args = 0
- 250              	.LVL14:
- 251 0000 08B5     		push	{r3, lr}
- 252              	.LCFI2:
- 253              		.cfi_def_cfa_offset 8
- 254              		.cfi_offset 3, -8
- 255              		.cfi_offset 14, -4
-ARM GAS  C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s 			page 9
-
-
-  23:Core/Src/joystick.cpp ****         if (!gStart_Byte_Rx2)
- 256              		.loc 2 23 0
- 257 0002 134B     		ldr	r3, .L23
- 258 0004 1B68     		ldr	r3, [r3]
- 259 0006 1B68     		ldr	r3, [r3]
- 260 0008 5B68     		ldr	r3, [r3, #4]
-  24:Core/Src/joystick.cpp ****         {
- 261              		.loc 2 24 0
- 262 000a 124B     		ldr	r3, .L23+4
- 263 000c 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
- 264 000e 43B9     		cbnz	r3, .L18
-  26:Core/Src/joystick.cpp ****                 {
- 265              		.loc 2 26 0
- 266 0010 114B     		ldr	r3, .L23+8
- 267 0012 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
- 268 0014 A52B     		cmp	r3, #165
- 269 0016 00D0     		beq	.L22
- 270              	.LVL15:
- 271              	.L17:
-  45:Core/Src/joystick.cpp **** 
- 272              		.loc 2 45 0
- 273 0018 08BD     		pop	{r3, pc}
- 274              	.LVL16:
- 275              	.L22:
-  28:Core/Src/joystick.cpp ****                 }
- 276              		.loc 2 28 0
- 277 001a 0E4B     		ldr	r3, .L23+4
- 278 001c 0122     		movs	r2, #1
- 279 001e 1A70     		strb	r2, [r3]
- 280 0020 FAE7     		b	.L17
- 281              	.L18:
-  33:Core/Src/joystick.cpp ****                 {
- 282              		.loc 2 33 0
- 283 0022 0E4B     		ldr	r3, .L23+12
- 284 0024 1B88     		ldrh	r3, [r3]
- 285 0026 072B     		cmp	r3, #7
- 286 0028 07D8     		bhi	.L20
-  35:Core/Src/joystick.cpp ****                         ++gRx2_Data_num;
- 287              		.loc 2 35 0
- 288 002a 0B4A     		ldr	r2, .L23+8
- 289 002c 1178     		ldrb	r1, [r2]	@ zero_extendqisi2
- 290 002e 0C4A     		ldr	r2, .L23+16
- 291 0030 D154     		strb	r1, [r2, r3]
-  36:Core/Src/joystick.cpp ****                 }
- 292              		.loc 2 36 0
- 293 0032 0133     		adds	r3, r3, #1
- 294 0034 094A     		ldr	r2, .L23+12
- 295 0036 1380     		strh	r3, [r2]	@ movhi
- 296 0038 EEE7     		b	.L17
- 297              	.L20:
-  40:Core/Src/joystick.cpp ****                         gRx2_Data_num = 0;
- 298              		.loc 2 40 0
- 299 003a 0023     		movs	r3, #0
- 300 003c 054A     		ldr	r2, .L23+4
- 301 003e 1370     		strb	r3, [r2]
-  41:Core/Src/joystick.cpp ****                         fill_JoyData(&gJoy, gJoy_Data_Arr);
- 302              		.loc 2 41 0
-ARM GAS  C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s 			page 10
-
-
- 303 0040 064A     		ldr	r2, .L23+12
- 304 0042 1380     		strh	r3, [r2]	@ movhi
-  42:Core/Src/joystick.cpp ****                 }
- 305              		.loc 2 42 0
- 306 0044 0649     		ldr	r1, .L23+16
- 307 0046 0748     		ldr	r0, .L23+20
- 308              	.LVL17:
- 309 0048 FFF7FEFF 		bl	_Z12fill_JoyDataP13JoyStick_DataPh
- 310              	.LVL18:
-  45:Core/Src/joystick.cpp **** 
- 311              		.loc 2 45 0
- 312 004c E4E7     		b	.L17
- 313              	.L24:
- 314 004e 00BF     		.align	2
- 315              	.L23:
- 316 0050 00000000 		.word	.LANCHOR0
- 317 0054 00000000 		.word	.LANCHOR3
- 318 0058 00000000 		.word	.LANCHOR2
- 319 005c 00000000 		.word	.LANCHOR4
- 320 0060 00000000 		.word	.LANCHOR5
- 321 0064 00000000 		.word	.LANCHOR6
- 322              		.cfi_endproc
- 323              	.LFE390:
- 325              		.section	.text._Z10Robot_taskv,"ax",%progbits
- 326              		.align	1
- 327              		.global	_Z10Robot_taskv
- 328              		.syntax unified
- 329              		.thumb
- 330              		.thumb_func
- 331              		.fpu fpv4-sp-d16
- 333              	_Z10Robot_taskv:
- 334              	.LFB393:
-  74:Core/Src/joystick.cpp ****         if (gJoy.lt == 0)
- 335              		.loc 2 74 0
- 336              		.cfi_startproc
- 337              		@ args = 0, pretend = 0, frame = 0
- 338              		@ frame_needed = 0, uses_anonymous_args = 0
- 339 0000 08B5     		push	{r3, lr}
- 340              	.LCFI3:
- 341              		.cfi_def_cfa_offset 8
- 342              		.cfi_offset 3, -8
- 343              		.cfi_offset 14, -4
-  75:Core/Src/joystick.cpp ****                 set_Omega(30);
- 344              		.loc 2 75 0
- 345 0002 3E4B     		ldr	r3, .L56
- 346 0004 9B78     		ldrb	r3, [r3, #2]	@ zero_extendqisi2
- 347 0006 002B     		cmp	r3, #0
- 348 0008 35D0     		beq	.L42
- 349              	.L26:
-  78:Core/Src/joystick.cpp ****                 set_Omega(50); //50-250/gJOy.lt*30
- 350              		.loc 2 78 0
- 351 000a 3C4B     		ldr	r3, .L56
- 352 000c 9B78     		ldrb	r3, [r3, #2]	@ zero_extendqisi2
- 353 000e 002B     		cmp	r3, #0
- 354 0010 36D1     		bne	.L43
- 355              	.L27:
-  81:Core/Src/joystick.cpp ****         {
-ARM GAS  C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s 			page 11
-
-
- 356              		.loc 2 81 0
- 357 0012 3A4B     		ldr	r3, .L56
- 358 0014 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
- 359 0016 402B     		cmp	r3, #64
- 360 0018 37D0     		beq	.L44
- 361              	.L28:
-  86:Core/Src/joystick.cpp ****         {
- 362              		.loc 2 86 0
- 363 001a 384B     		ldr	r3, .L56
- 364 001c 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
- 365 001e 202B     		cmp	r3, #32
- 366 0020 3AD0     		beq	.L45
- 367              	.L29:
-  90:Core/Src/joystick.cpp ****                 forward_left();
- 368              		.loc 2 90 0
- 369 0022 364B     		ldr	r3, .L56
- 370 0024 93F90530 		ldrsb	r3, [r3, #5]
- 371 0028 002B     		cmp	r3, #0
- 372 002a 05DD     		ble	.L30
-  90:Core/Src/joystick.cpp ****                 forward_left();
- 373              		.loc 2 90 0 is_stmt 0 discriminator 1
- 374 002c 334A     		ldr	r2, .L56
- 375 002e 9279     		ldrb	r2, [r2, #6]	@ zero_extendqisi2
- 376 0030 12F0800F 		tst	r2, #128
- 377 0034 00D1     		bne	.L30
-  90:Core/Src/joystick.cpp ****                 forward_left();
- 378              		.loc 2 90 0 discriminator 2
- 379 0036 B2BB     		cbnz	r2, .L46
- 380              	.L30:
-  93:Core/Src/joystick.cpp ****                 forward_right();
- 381              		.loc 2 93 0 is_stmt 1
- 382 0038 002B     		cmp	r3, #0
- 383 003a 04DD     		ble	.L32
-  93:Core/Src/joystick.cpp ****                 forward_right();
- 384              		.loc 2 93 0 is_stmt 0 discriminator 1
- 385 003c 2F4A     		ldr	r2, .L56
- 386 003e 92F90620 		ldrsb	r2, [r2, #6]
- 387 0042 002A     		cmp	r2, #0
- 388 0044 32DB     		blt	.L47
- 389              	.L32:
-  96:Core/Src/joystick.cpp ****                 back_left();
- 390              		.loc 2 96 0 is_stmt 1
- 391 0046 002B     		cmp	r3, #0
- 392 0048 33DB     		blt	.L48
- 393              	.L33:
-  99:Core/Src/joystick.cpp ****                 back_right();
- 394              		.loc 2 99 0
- 395 004a 002B     		cmp	r3, #0
- 396 004c 3BDB     		blt	.L49
- 397              	.L34:
- 102:Core/Src/joystick.cpp ****                 forward();
- 398              		.loc 2 102 0
- 399 004e 002B     		cmp	r3, #0
- 400 0050 41DC     		bgt	.L50
- 105:Core/Src/joystick.cpp ****                 back();
- 401              		.loc 2 105 0
- 402 0052 002B     		cmp	r3, #0
-ARM GAS  C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s 			page 12
-
-
- 403 0054 42DB     		blt	.L51
- 108:Core/Src/joystick.cpp ****                 left();
- 404              		.loc 2 108 0
- 405 0056 294B     		ldr	r3, .L56
- 406 0058 93F90630 		ldrsb	r3, [r3, #6]
- 407 005c 002B     		cmp	r3, #0
- 408 005e 40DC     		bgt	.L52
- 111:Core/Src/joystick.cpp ****                 right();
- 409              		.loc 2 111 0
- 410 0060 002B     		cmp	r3, #0
- 411 0062 41DB     		blt	.L53
- 114:Core/Src/joystick.cpp ****                 clockwise();
- 412              		.loc 2 114 0
- 413 0064 254B     		ldr	r3, .L56
- 414 0066 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
- 415 0068 012B     		cmp	r3, #1
- 416 006a 40D0     		beq	.L54
- 117:Core/Src/joystick.cpp ****                 anticlockwise();
- 417              		.loc 2 117 0
- 418 006c 022B     		cmp	r3, #2
- 419 006e 41D0     		beq	.L55
- 121:Core/Src/joystick.cpp **** }
- 420              		.loc 2 121 0
- 421 0070 FFF7FEFF 		bl	_Z4stopv
- 422              	.LVL19:
- 423              		.loc 2 122 0
- 424 0074 31E0     		b	.L25
- 425              	.L42:
-  76:Core/Src/joystick.cpp **** 
- 426              		.loc 2 76 0
- 427 0076 B3EE0E0A 		vmov.f32	s0, #3.0e+1
- 428 007a FFF7FEFF 		bl	_Z9set_Omegaf
- 429              	.LVL20:
- 430 007e C4E7     		b	.L26
- 431              	.L43:
-  79:Core/Src/joystick.cpp **** 
- 432              		.loc 2 79 0
- 433 0080 9FED1F0A 		vldr.32	s0, .L56+4
- 434 0084 FFF7FEFF 		bl	_Z9set_Omegaf
- 435              	.LVL21:
- 436 0088 C3E7     		b	.L27
- 437              	.L44:
-  83:Core/Src/joystick.cpp ****         }
- 438              		.loc 2 83 0
- 439 008a 0122     		movs	r2, #1
- 440 008c 4FF40061 		mov	r1, #2048
- 441 0090 1C48     		ldr	r0, .L56+8
- 442 0092 FFF7FEFF 		bl	HAL_GPIO_WritePin
- 443              	.LVL22:
- 444 0096 C0E7     		b	.L28
- 445              	.L45:
-  88:Core/Src/joystick.cpp ****         }
- 446              		.loc 2 88 0
- 447 0098 0022     		movs	r2, #0
- 448 009a 4FF40061 		mov	r1, #2048
- 449 009e 1948     		ldr	r0, .L56+8
- 450 00a0 FFF7FEFF 		bl	HAL_GPIO_WritePin
-ARM GAS  C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s 			page 13
-
-
- 451              	.LVL23:
- 452 00a4 BDE7     		b	.L29
- 453              	.L46:
-  91:Core/Src/joystick.cpp **** 
- 454              		.loc 2 91 0
- 455 00a6 FFF7FEFF 		bl	_Z12forward_leftv
- 456              	.LVL24:
- 457 00aa 16E0     		b	.L25
- 458              	.L47:
-  94:Core/Src/joystick.cpp **** 
- 459              		.loc 2 94 0
- 460 00ac FFF7FEFF 		bl	_Z13forward_rightv
- 461              	.LVL25:
- 462 00b0 13E0     		b	.L25
- 463              	.L48:
-  96:Core/Src/joystick.cpp ****                 back_left();
- 464              		.loc 2 96 0 discriminator 1
- 465 00b2 124A     		ldr	r2, .L56
- 466 00b4 9279     		ldrb	r2, [r2, #6]	@ zero_extendqisi2
- 467 00b6 12F0800F 		tst	r2, #128
- 468 00ba C6D1     		bne	.L33
-  96:Core/Src/joystick.cpp ****                 back_left();
- 469              		.loc 2 96 0 is_stmt 0 discriminator 2
- 470 00bc 002A     		cmp	r2, #0
- 471 00be C4D0     		beq	.L33
+  93:Core/Src/joystick.cpp ****         if (gJoy.button1 == 32) //A
+  94:Core/Src/joystick.cpp ****         {
+  95:Core/Src/joystick.cpp ****                 HAL_GPIO_WritePin(pneumatic1_GPIO_Port, pneumatic1_Pin, GPIO_PIN_RESET);
+  96:Core/Src/joystick.cpp ****         }
   97:Core/Src/joystick.cpp **** 
- 472              		.loc 2 97 0 is_stmt 1
- 473 00c0 FFF7FEFF 		bl	_Z9back_leftv
- 474              	.LVL26:
- 475 00c4 09E0     		b	.L25
- 476              	.L49:
-  99:Core/Src/joystick.cpp ****                 back_right();
- 477              		.loc 2 99 0 discriminator 1
- 478 00c6 0D4A     		ldr	r2, .L56
- 479 00c8 92F90620 		ldrsb	r2, [r2, #6]
- 480 00cc 002A     		cmp	r2, #0
- 481 00ce BEDA     		bge	.L34
- 100:Core/Src/joystick.cpp **** 
- 482              		.loc 2 100 0
- 483 00d0 FFF7FEFF 		bl	_Z10back_rightv
- 484              	.LVL27:
- 485 00d4 01E0     		b	.L25
- 486              	.L50:
- 103:Core/Src/joystick.cpp **** 
- 487              		.loc 2 103 0
- 488 00d6 FFF7FEFF 		bl	_Z7forwardv
- 489              	.LVL28:
- 490              	.L25:
- 491              		.loc 2 122 0
- 492 00da 08BD     		pop	{r3, pc}
- 493              	.L51:
- 106:Core/Src/joystick.cpp **** 
- 494              		.loc 2 106 0
- 495 00dc FFF7FEFF 		bl	_Z4backv
- 496              	.LVL29:
- 497 00e0 FBE7     		b	.L25
- 498              	.L52:
-ARM GAS  C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s 			page 14
-
-
+  98:Core/Src/joystick.cpp ****         if (gJoy.button1 == 128) //y b=16 x=128 a = 32
+  99:Core/Src/joystick.cpp ****         {
+ 100:Core/Src/joystick.cpp ****                 // HAL_UART_Transmit(&huart4, (uint8_t *)"x", 1, 10);
+ 101:Core/Src/joystick.cpp ****                 HAL_GPIO_WritePin(ledStripRed_Port, ledStripRed_Pin, GPIO_PIN_SET);
+ 102:Core/Src/joystick.cpp ****                 HAL_GPIO_WritePin(ledStripBlue_Port, ledStripBlue_Pin, GPIO_PIN_RESET);
+ 103:Core/Src/joystick.cpp ****         }
+ 104:Core/Src/joystick.cpp **** 
+ 105:Core/Src/joystick.cpp ****         if (gJoy.button1 == 16) //A
+ 106:Core/Src/joystick.cpp ****         {
+ 107:Core/Src/joystick.cpp ****                 blueLedState = 0;
+ 108:Core/Src/joystick.cpp ****         }
  109:Core/Src/joystick.cpp **** 
- 499              		.loc 2 109 0
- 500 00e2 FFF7FEFF 		bl	_Z4leftv
- 501              	.LVL30:
- 502 00e6 F8E7     		b	.L25
- 503              	.L53:
+ 110:Core/Src/joystick.cpp ****         if (gJoy.l_haty <= 127 && gJoy.l_haty != 0 && gJoy.r_hatx <= 127 && gJoy.r_hatx != 0)
+ 111:Core/Src/joystick.cpp ****                 forward_left();
  112:Core/Src/joystick.cpp **** 
- 504              		.loc 2 112 0
- 505 00e8 FFF7FEFF 		bl	_Z5rightv
- 506              	.LVL31:
- 507 00ec F5E7     		b	.L25
- 508              	.L54:
+ 113:Core/Src/joystick.cpp ****         else if (gJoy.l_haty <= 127 && gJoy.l_haty != 0 && gJoy.r_hatx >= 128)
+ 114:Core/Src/joystick.cpp ****                 forward_right();
  115:Core/Src/joystick.cpp **** 
- 509              		.loc 2 115 0
- 510 00ee FFF7FEFF 		bl	_Z9clockwisev
- 511              	.LVL32:
- 512 00f2 F2E7     		b	.L25
- 513              	.L55:
+ 116:Core/Src/joystick.cpp ****         else if (gJoy.l_haty >= 128 && gJoy.r_hatx <= 127 && gJoy.r_hatx != 0)
+ 117:Core/Src/joystick.cpp ****                 back_left();
  118:Core/Src/joystick.cpp **** 
- 514              		.loc 2 118 0
- 515 00f4 FFF7FEFF 		bl	_Z13anticlockwisev
- 516              	.LVL33:
- 517 00f8 EFE7     		b	.L25
- 518              	.L57:
- 519 00fa 00BF     		.align	2
- 520              	.L56:
- 521 00fc 00000000 		.word	.LANCHOR6
- 522 0100 00004842 		.word	1112014848
- 523 0104 00040240 		.word	1073873920
- 524              		.cfi_endproc
- 525              	.LFE393:
- 527              		.section	.text._GLOBAL__sub_I_pneumaticState,"ax",%progbits
- 528              		.align	1
- 529              		.syntax unified
- 530              		.thumb
- 531              		.thumb_func
- 532              		.fpu fpv4-sp-d16
- 534              	_GLOBAL__sub_I_pneumaticState:
- 535              	.LFB404:
- 536              		.loc 2 122 0
- 537              		.cfi_startproc
- 538              		@ args = 0, pretend = 0, frame = 0
- 539              		@ frame_needed = 0, uses_anonymous_args = 0
- 540 0000 08B5     		push	{r3, lr}
- 541              	.LCFI4:
- 542              		.cfi_def_cfa_offset 8
- 543              		.cfi_offset 3, -8
- 544              		.cfi_offset 14, -4
- 545              		.loc 2 122 0
- 546 0002 4FF6FF71 		movw	r1, #65535
- 547 0006 0120     		movs	r0, #1
- 548 0008 FFF7FEFF 		bl	_Z41__static_initialization_and_destruction_0ii
- 549              	.LVL34:
- 550 000c 08BD     		pop	{r3, pc}
- 551              		.cfi_endproc
- 552              	.LFE404:
- 554              		.section	.init_array,"aw",%init_array
-ARM GAS  C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s 			page 15
+ 119:Core/Src/joystick.cpp ****         else if (gJoy.l_haty >= 128 && gJoy.r_hatx >= 128)
+ 120:Core/Src/joystick.cpp ****                 back_right();
+ 121:Core/Src/joystick.cpp **** 
+ 122:Core/Src/joystick.cpp ****         else if (gJoy.l_haty <= 127 && gJoy.l_haty != 0)
+ 123:Core/Src/joystick.cpp ****                 forward();
+ 124:Core/Src/joystick.cpp **** 
+ 125:Core/Src/joystick.cpp ****         else if (gJoy.l_haty >= 128)
+ 126:Core/Src/joystick.cpp ****                 back();
+ 127:Core/Src/joystick.cpp **** 
+ 128:Core/Src/joystick.cpp ****         else if (gJoy.r_hatx <= 127 && gJoy.r_hatx != 0)
+ 129:Core/Src/joystick.cpp ****                 left();
+ 130:Core/Src/joystick.cpp **** 
+ 131:Core/Src/joystick.cpp ****         else if (gJoy.r_hatx >= 128)
+ 132:Core/Src/joystick.cpp ****                 right();
+ARM GAS  C:\Users\one\AppData\Local\Temp\cco6VL2H.s 			page 6
 
 
- 555              		.align	2
- 556 0000 00000000 		.word	_GLOBAL__sub_I_pneumaticState(target1)
- 557              		.global	gJoy_Data_Arr
- 558              		.global	gJoy
- 559              		.global	joystick
- 560              		.global	pneumaticState
- 561              		.section	.bss._ZL13gRx2_Data_num,"aw",%nobits
- 562              		.align	1
- 563              		.set	.LANCHOR4,. + 0
- 566              	_ZL13gRx2_Data_num:
- 567 0000 0000     		.space	2
- 568              		.section	.bss._ZL15gStart_Byte_Rx2,"aw",%nobits
- 569              		.set	.LANCHOR3,. + 0
- 572              	_ZL15gStart_Byte_Rx2:
- 573 0000 00       		.space	1
- 574              		.section	.bss._ZL8gRx2Data,"aw",%nobits
- 575              		.set	.LANCHOR2,. + 0
- 578              	_ZL8gRx2Data:
- 579 0000 00       		.space	1
- 580              		.section	.bss._ZL9gJoyStick,"aw",%nobits
- 581              		.align	2
- 582              		.set	.LANCHOR0,. + 0
- 585              	_ZL9gJoyStick:
- 586 0000 00000000 		.space	32
- 586      00000000 
- 586      00000000 
- 586      00000000 
- 586      00000000 
- 587              		.section	.bss.gJoy,"aw",%nobits
- 588              		.align	2
- 589              		.set	.LANCHOR6,. + 0
- 592              	gJoy:
- 593 0000 00000000 		.space	8
- 593      00000000 
- 594              		.section	.bss.gJoy_Data_Arr,"aw",%nobits
- 595              		.align	2
- 596              		.set	.LANCHOR5,. + 0
- 599              	gJoy_Data_Arr:
- 600 0000 00000000 		.space	8
- 600      00000000 
- 601              		.section	.bss.joystick,"aw",%nobits
- 602              		.align	2
- 603              		.set	.LANCHOR1,. + 0
- 606              	joystick:
- 607 0000 00000000 		.space	4
- 608              		.section	.bss.pneumaticState,"aw",%nobits
- 611              	pneumaticState:
- 612 0000 00       		.space	1
- 613              		.text
- 614              	.Letext0:
- 615              		.file 4 "c:\\program files (x86)\\gnu tools arm embedded\\7 2017-q4-major\\arm-none-eabi\\include\
- 616              		.file 5 "c:\\program files (x86)\\gnu tools arm embedded\\7 2017-q4-major\\arm-none-eabi\\include\
- 617              		.file 6 "Drivers/CMSIS/Include/core_cm4.h"
- 618              		.file 7 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h"
- 619              		.file 8 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h"
- 620              		.file 9 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h"
- 621              		.file 10 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h"
-ARM GAS  C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s 			page 16
+ 133:Core/Src/joystick.cpp **** 
+ 134:Core/Src/joystick.cpp ****         else if (gJoy.button1 == 1)
+ 135:Core/Src/joystick.cpp ****                 clockwise();
+ 136:Core/Src/joystick.cpp **** 
+ 137:Core/Src/joystick.cpp ****         else if (gJoy.button1 == 2)
+ 138:Core/Src/joystick.cpp ****                 anticlockwise();
+ 139:Core/Src/joystick.cpp **** 
+ 140:Core/Src/joystick.cpp ****         else
+ 141:Core/Src/joystick.cpp ****                 stop();
+ 142:Core/Src/joystick.cpp **** }
+  82              		.loc 3 142 1 is_stmt 1 view -0
+  83              		.cfi_startproc
+  84              		@ args = 0, pretend = 0, frame = 0
+  85              		@ frame_needed = 0, uses_anonymous_args = 0
+  86              		.loc 3 142 1 is_stmt 0 view .LVU7
+  87 0000 0128     		cmp	r0, #1
+  88 0002 00D0     		beq	.L9
+  89              	.L6:
+  90 0004 7047     		bx	lr
+  91              	.L9:
+  92              		.loc 3 142 1 discriminator 1 view .LVU8
+  93 0006 4FF6FF73 		movw	r3, #65535
+  94 000a 9942     		cmp	r1, r3
+  95 000c FAD1     		bne	.L6
+  96              		.loc 3 142 1 view .LVU9
+  97 000e 10B5     		push	{r4, lr}
+  98              	.LCFI0:
+  99              		.cfi_def_cfa_offset 8
+ 100              		.cfi_offset 4, -8
+ 101              		.cfi_offset 14, -4
+ 102              	.LVL3:
+ 103              	.LBB19:
+ 104              	.LBI19:
+  35:Core/Inc/joystick.h **** {
+ 105              		.loc 1 35 8 is_stmt 1 view .LVU10
+ 106              	.LBB20:
+ 107              	.LBI20:
+  18:Core/Inc/container/queue_custom.h ****         Queue(Queue &&) = default;
+ 108              		.loc 2 18 9 view .LVU11
+ 109              	.LBB21:
+ 110              	.LBB22:
+  18:Core/Inc/container/queue_custom.h ****         Queue(Queue &&) = default;
+ 111              		.loc 2 18 51 is_stmt 0 view .LVU12
+ 112 0010 0848     		ldr	r0, .L10
+ 113              	.LVL4:
+  18:Core/Inc/container/queue_custom.h ****         Queue(Queue &&) = default;
+ 114              		.loc 2 18 51 view .LVU13
+ 115 0012 0023     		movs	r3, #0
+ 116 0014 4360     		str	r3, [r0, #4]
+ 117 0016 8360     		str	r3, [r0, #8]
+ 118 0018 C360     		str	r3, [r0, #12]
+ 119              	.LVL5:
+  18:Core/Inc/container/queue_custom.h ****         Queue(Queue &&) = default;
+ 120              		.loc 2 18 51 view .LVU14
+ 121              	.LBE22:
+ 122              	.LBE21:
+ 123              	.LBE20:
+ARM GAS  C:\Users\one\AppData\Local\Temp\cco6VL2H.s 			page 7
 
 
- 622              		.file 11 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h"
- 623              		.file 12 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h"
- 624              		.file 13 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h"
- 625              		.file 14 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h"
- 626              		.file 15 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h"
- 627              		.file 16 "Core/Inc/usart.h"
- 628              		.file 17 "Core/Inc/tim.h"
- 629              		.file 18 "c:\\program files (x86)\\gnu tools arm embedded\\7 2017-q4-major\\arm-none-eabi\\include
- 630              		.file 19 "c:\\program files (x86)\\gnu tools arm embedded\\7 2017-q4-major\\arm-none-eabi\\include
- 631              		.file 20 "c:\\program files (x86)\\gnu tools arm embedded\\7 2017-q4-major\\lib\\gcc\\arm-none-eab
- 632              		.file 21 "c:\\program files (x86)\\gnu tools arm embedded\\7 2017-q4-major\\arm-none-eabi\\include
- 633              		.file 22 "c:\\program files (x86)\\gnu tools arm embedded\\7 2017-q4-major\\arm-none-eabi\\include
- 634              		.file 23 "c:\\program files (x86)\\gnu tools arm embedded\\7 2017-q4-major\\arm-none-eabi\\include
- 635              		.file 24 "c:\\program files (x86)\\gnu tools arm embedded\\7 2017-q4-major\\arm-none-eabi\\include
- 636              		.file 25 "c:\\program files (x86)\\gnu tools arm embedded\\7 2017-q4-major\\arm-none-eabi\\include
- 637              		.file 26 "c:\\program files (x86)\\gnu tools arm embedded\\7 2017-q4-major\\arm-none-eabi\\include
- 638              		.file 27 "c:\\program files (x86)\\gnu tools arm embedded\\7 2017-q4-major\\arm-none-eabi\\include
- 639              		.file 28 "Core/Inc/actuator.h"
- 640              		.file 29 "<built-in>"
-ARM GAS  C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s 			page 17
+ 124              	.LBE19:
+   9:Core/Src/joystick.cpp **** static JoyStick_Data gNull_JData;
+ 125              		.loc 3 9 24 view .LVU15
+ 126 001a 074C     		ldr	r4, .L10+4
+ 127 001c 2246     		mov	r2, r4
+ 128 001e 0749     		ldr	r1, .L10+8
+ 129              	.LVL6:
+   9:Core/Src/joystick.cpp **** static JoyStick_Data gNull_JData;
+ 130              		.loc 3 9 24 view .LVU16
+ 131 0020 FFF7FEFF 		bl	__aeabi_atexit
+ 132              	.LVL7:
+ 133              	.LBB23:
+ 134              	.LBI23:
+  44:Core/Inc/joystick.h ****         {
+ 135              		.loc 1 44 9 is_stmt 1 view .LVU17
+ 136              	.LBB24:
+ 137              	.LBB25:
+  46:Core/Inc/joystick.h ****         }
+ 138              		.loc 1 46 17 view .LVU18
+  46:Core/Inc/joystick.h ****         }
+ 139              		.loc 1 46 24 is_stmt 0 view .LVU19
+ 140 0024 0648     		ldr	r0, .L10+12
+ 141 0026 074B     		ldr	r3, .L10+16
+ 142 0028 0360     		str	r3, [r0]
+ 143              	.LVL8:
+  46:Core/Inc/joystick.h ****         }
+ 144              		.loc 1 46 24 view .LVU20
+ 145              	.LBE25:
+ 146              	.LBE24:
+ 147              	.LBE23:
+  15:Core/Src/joystick.cpp **** struct JoyStick_Data gJoy;
+ 148              		.loc 3 15 10 view .LVU21
+ 149 002a 2246     		mov	r2, r4
+ 150 002c 0649     		ldr	r1, .L10+20
+ 151 002e FFF7FEFF 		bl	__aeabi_atexit
+ 152              	.LVL9:
+ 153              		.loc 3 142 1 view .LVU22
+ 154 0032 10BD     		pop	{r4, pc}
+ 155              	.L11:
+ 156              		.align	2
+ 157              	.L10:
+ 158 0034 00000000 		.word	.LANCHOR0
+ 159 0038 00000000 		.word	__dso_handle
+ 160 003c 00000000 		.word	_ZN15JoyStick_HandleD1Ev
+ 161 0040 00000000 		.word	.LANCHOR1
+ 162 0044 00000000 		.word	huart2
+ 163 0048 00000000 		.word	_ZN8JoyStickD1Ev
+ 164              		.cfi_endproc
+ 165              	.LFE400:
+ 167              		.section	.text._ZN8JoyStick4initEv,"ax",%progbits
+ 168              		.align	1
+ 169              		.global	_ZN8JoyStick4initEv
+ 170              		.syntax unified
+ 171              		.thumb
+ 172              		.thumb_func
+ 173              		.fpu fpv4-sp-d16
+ 175              	_ZN8JoyStick4initEv:
+ARM GAS  C:\Users\one\AppData\Local\Temp\cco6VL2H.s 			page 8
+
+
+ 176              	.LVL10:
+ 177              	.LFB391:
+  48:Core/Src/joystick.cpp ****         gJoyStick.huart = huart_;
+ 178              		.loc 3 48 1 is_stmt 1 view -0
+ 179              		.cfi_startproc
+ 180              		@ args = 0, pretend = 0, frame = 0
+ 181              		@ frame_needed = 0, uses_anonymous_args = 0
+  48:Core/Src/joystick.cpp ****         gJoyStick.huart = huart_;
+ 182              		.loc 3 48 1 is_stmt 0 view .LVU24
+ 183 0000 08B5     		push	{r3, lr}
+ 184              	.LCFI1:
+ 185              		.cfi_def_cfa_offset 8
+ 186              		.cfi_offset 3, -8
+ 187              		.cfi_offset 14, -4
+  49:Core/Src/joystick.cpp ****         gNull_JData.button1 = 0;
+ 188              		.loc 3 49 9 is_stmt 1 view .LVU25
+  49:Core/Src/joystick.cpp ****         gNull_JData.button1 = 0;
+ 189              		.loc 3 49 27 is_stmt 0 view .LVU26
+ 190 0002 0068     		ldr	r0, [r0]
+ 191              	.LVL11:
+  49:Core/Src/joystick.cpp ****         gNull_JData.button1 = 0;
+ 192              		.loc 3 49 25 view .LVU27
+ 193 0004 034B     		ldr	r3, .L14
+ 194 0006 1860     		str	r0, [r3]
+  50:Core/Src/joystick.cpp ****         gNull_JData.button2 = 0;
+ 195              		.loc 3 50 9 is_stmt 1 view .LVU28
+  51:Core/Src/joystick.cpp ****         gNull_JData.lt = 0;
+ 196              		.loc 3 51 9 view .LVU29
+  52:Core/Src/joystick.cpp ****         gNull_JData.rt = 0;
+ 197              		.loc 3 52 9 view .LVU30
+  53:Core/Src/joystick.cpp ****         gNull_JData.l_hatx = 0;
+ 198              		.loc 3 53 9 view .LVU31
+  54:Core/Src/joystick.cpp ****         gNull_JData.l_haty = 0;
+ 199              		.loc 3 54 9 view .LVU32
+  55:Core/Src/joystick.cpp ****         gNull_JData.r_haty = 0;
+ 200              		.loc 3 55 9 view .LVU33
+  56:Core/Src/joystick.cpp ****         HAL_UART_Receive_DMA(huart_, &gRx2Data, 1);
+ 201              		.loc 3 56 9 view .LVU34
+  57:Core/Src/joystick.cpp ****         return 0;
+ 202              		.loc 3 57 9 view .LVU35
+  57:Core/Src/joystick.cpp ****         return 0;
+ 203              		.loc 3 57 29 is_stmt 0 view .LVU36
+ 204 0008 0122     		movs	r2, #1
+ 205 000a 0349     		ldr	r1, .L14+4
+ 206 000c FFF7FEFF 		bl	HAL_UART_Receive_DMA
+ 207              	.LVL12:
+  58:Core/Src/joystick.cpp **** }
+ 208              		.loc 3 58 9 is_stmt 1 view .LVU37
+  59:Core/Src/joystick.cpp **** 
+ 209              		.loc 3 59 1 is_stmt 0 view .LVU38
+ 210 0010 0020     		movs	r0, #0
+ 211 0012 08BD     		pop	{r3, pc}
+ 212              	.L15:
+ 213              		.align	2
+ 214              	.L14:
+ 215 0014 00000000 		.word	.LANCHOR0
+ 216 0018 00000000 		.word	.LANCHOR2
+ARM GAS  C:\Users\one\AppData\Local\Temp\cco6VL2H.s 			page 9
+
+
+ 217              		.cfi_endproc
+ 218              	.LFE391:
+ 220              		.section	.text._Z12fill_JoyDataP13JoyStick_DataPh,"ax",%progbits
+ 221              		.align	1
+ 222              		.global	_Z12fill_JoyDataP13JoyStick_DataPh
+ 223              		.syntax unified
+ 224              		.thumb
+ 225              		.thumb_func
+ 226              		.fpu fpv4-sp-d16
+ 228              	_Z12fill_JoyDataP13JoyStick_DataPh:
+ 229              	.LVL13:
+ 230              	.LFB392:
+  62:Core/Src/joystick.cpp ****         joy->button1 = data[0];
+ 231              		.loc 3 62 1 is_stmt 1 view -0
+ 232              		.cfi_startproc
+ 233              		@ args = 0, pretend = 0, frame = 0
+ 234              		@ frame_needed = 0, uses_anonymous_args = 0
+ 235              		@ link register save eliminated.
+  63:Core/Src/joystick.cpp ****         joy->button2 = data[1];
+ 236              		.loc 3 63 9 view .LVU40
+  63:Core/Src/joystick.cpp ****         joy->button2 = data[1];
+ 237              		.loc 3 63 30 is_stmt 0 view .LVU41
+ 238 0000 0B78     		ldrb	r3, [r1]	@ zero_extendqisi2
+  63:Core/Src/joystick.cpp ****         joy->button2 = data[1];
+ 239              		.loc 3 63 22 view .LVU42
+ 240 0002 0370     		strb	r3, [r0]
+  64:Core/Src/joystick.cpp ****         joy->lt = data[2];
+ 241              		.loc 3 64 9 is_stmt 1 view .LVU43
+  64:Core/Src/joystick.cpp ****         joy->lt = data[2];
+ 242              		.loc 3 64 22 is_stmt 0 view .LVU44
+ 243 0004 4B78     		ldrb	r3, [r1, #1]	@ zero_extendqisi2
+ 244 0006 4370     		strb	r3, [r0, #1]
+  65:Core/Src/joystick.cpp ****         joy->rt = data[3];
+ 245              		.loc 3 65 9 is_stmt 1 view .LVU45
+  65:Core/Src/joystick.cpp ****         joy->rt = data[3];
+ 246              		.loc 3 65 17 is_stmt 0 view .LVU46
+ 247 0008 8B78     		ldrb	r3, [r1, #2]	@ zero_extendqisi2
+ 248 000a 8370     		strb	r3, [r0, #2]
+  66:Core/Src/joystick.cpp ****         joy->l_hatx = data[4];
+ 249              		.loc 3 66 9 is_stmt 1 view .LVU47
+  66:Core/Src/joystick.cpp ****         joy->l_hatx = data[4];
+ 250              		.loc 3 66 17 is_stmt 0 view .LVU48
+ 251 000c CB78     		ldrb	r3, [r1, #3]	@ zero_extendqisi2
+ 252 000e C370     		strb	r3, [r0, #3]
+  67:Core/Src/joystick.cpp ****         joy->l_haty = data[5];
+ 253              		.loc 3 67 9 is_stmt 1 view .LVU49
+  67:Core/Src/joystick.cpp ****         joy->l_haty = data[5];
+ 254              		.loc 3 67 21 is_stmt 0 view .LVU50
+ 255 0010 0B79     		ldrb	r3, [r1, #4]	@ zero_extendqisi2
+ 256 0012 0371     		strb	r3, [r0, #4]
+  68:Core/Src/joystick.cpp ****         joy->r_hatx = data[6];
+ 257              		.loc 3 68 9 is_stmt 1 view .LVU51
+  68:Core/Src/joystick.cpp ****         joy->r_hatx = data[6];
+ 258              		.loc 3 68 21 is_stmt 0 view .LVU52
+ 259 0014 4B79     		ldrb	r3, [r1, #5]	@ zero_extendqisi2
+ 260 0016 4371     		strb	r3, [r0, #5]
+  69:Core/Src/joystick.cpp ****         joy->r_haty = data[7];
+ARM GAS  C:\Users\one\AppData\Local\Temp\cco6VL2H.s 			page 10
+
+
+ 261              		.loc 3 69 9 is_stmt 1 view .LVU53
+  69:Core/Src/joystick.cpp ****         joy->r_haty = data[7];
+ 262              		.loc 3 69 21 is_stmt 0 view .LVU54
+ 263 0018 8B79     		ldrb	r3, [r1, #6]	@ zero_extendqisi2
+ 264 001a 8371     		strb	r3, [r0, #6]
+  70:Core/Src/joystick.cpp **** }
+ 265              		.loc 3 70 9 is_stmt 1 view .LVU55
+  70:Core/Src/joystick.cpp **** }
+ 266              		.loc 3 70 21 is_stmt 0 view .LVU56
+ 267 001c CB79     		ldrb	r3, [r1, #7]	@ zero_extendqisi2
+ 268 001e C371     		strb	r3, [r0, #7]
+  71:Core/Src/joystick.cpp **** 
+ 269              		.loc 3 71 1 view .LVU57
+ 270 0020 7047     		bx	lr
+ 271              		.cfi_endproc
+ 272              	.LFE392:
+ 274              		.section	.text.HAL_UART_RxCpltCallback,"ax",%progbits
+ 275              		.align	1
+ 276              		.global	HAL_UART_RxCpltCallback
+ 277              		.syntax unified
+ 278              		.thumb
+ 279              		.thumb_func
+ 280              		.fpu fpv4-sp-d16
+ 282              	HAL_UART_RxCpltCallback:
+ 283              	.LVL14:
+ 284              	.LFB390:
+  22:Core/Src/joystick.cpp ****         __HAL_UART_FLUSH_DRREGISTER(gJoyStick.huart);
+ 285              		.loc 3 22 1 is_stmt 1 view -0
+ 286              		.cfi_startproc
+ 287              		@ args = 0, pretend = 0, frame = 0
+ 288              		@ frame_needed = 0, uses_anonymous_args = 0
+  22:Core/Src/joystick.cpp ****         __HAL_UART_FLUSH_DRREGISTER(gJoyStick.huart);
+ 289              		.loc 3 22 1 is_stmt 0 view .LVU59
+ 290 0000 08B5     		push	{r3, lr}
+ 291              	.LCFI2:
+ 292              		.cfi_def_cfa_offset 8
+ 293              		.cfi_offset 3, -8
+ 294              		.cfi_offset 14, -4
+  23:Core/Src/joystick.cpp ****         if (!gStart_Byte_Rx2)
+ 295              		.loc 3 23 9 is_stmt 1 view .LVU60
+ 296 0002 124B     		ldr	r3, .L22
+ 297 0004 1B68     		ldr	r3, [r3]
+ 298 0006 1B68     		ldr	r3, [r3]
+ 299 0008 5B68     		ldr	r3, [r3, #4]
+  24:Core/Src/joystick.cpp ****         {
+ 300              		.loc 3 24 9 view .LVU61
+  24:Core/Src/joystick.cpp ****         {
+ 301              		.loc 3 24 13 is_stmt 0 view .LVU62
+ 302 000a 114B     		ldr	r3, .L22+4
+ 303 000c 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+  24:Core/Src/joystick.cpp ****         {
+ 304              		.loc 3 24 9 view .LVU63
+ 305 000e 3BB9     		cbnz	r3, .L18
+  26:Core/Src/joystick.cpp ****                 {
+ 306              		.loc 3 26 17 is_stmt 1 view .LVU64
+  26:Core/Src/joystick.cpp ****                 {
+ 307              		.loc 3 26 30 is_stmt 0 view .LVU65
+ARM GAS  C:\Users\one\AppData\Local\Temp\cco6VL2H.s 			page 11
+
+
+ 308 0010 104B     		ldr	r3, .L22+8
+ 309 0012 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+  26:Core/Src/joystick.cpp ****                 {
+ 310              		.loc 3 26 17 view .LVU66
+ 311 0014 A52B     		cmp	r3, #165
+ 312 0016 0ED1     		bne	.L17
+  28:Core/Src/joystick.cpp ****                 }
+ 313              		.loc 3 28 25 is_stmt 1 view .LVU67
+  28:Core/Src/joystick.cpp ****                 }
+ 314              		.loc 3 28 41 is_stmt 0 view .LVU68
+ 315 0018 0D4B     		ldr	r3, .L22+4
+ 316 001a 0122     		movs	r2, #1
+ 317 001c 1A70     		strb	r2, [r3]
+ 318 001e 0AE0     		b	.L17
+ 319              	.L18:
+  33:Core/Src/joystick.cpp ****                 {
+ 320              		.loc 3 33 17 is_stmt 1 view .LVU69
+  33:Core/Src/joystick.cpp ****                 {
+ 321              		.loc 3 33 35 is_stmt 0 view .LVU70
+ 322 0020 0D4B     		ldr	r3, .L22+12
+ 323 0022 1B88     		ldrh	r3, [r3]
+  33:Core/Src/joystick.cpp ****                 {
+ 324              		.loc 3 33 17 view .LVU71
+ 325 0024 072B     		cmp	r3, #7
+ 326 0026 07D8     		bhi	.L20
+  35:Core/Src/joystick.cpp ****                         ++gRx2_Data_num;
+ 327              		.loc 3 35 25 is_stmt 1 view .LVU72
+  35:Core/Src/joystick.cpp ****                         ++gRx2_Data_num;
+ 328              		.loc 3 35 54 is_stmt 0 view .LVU73
+ 329 0028 0A4A     		ldr	r2, .L22+8
+ 330 002a 1178     		ldrb	r1, [r2]	@ zero_extendqisi2
+ 331 002c 0B4A     		ldr	r2, .L22+16
+ 332 002e D154     		strb	r1, [r2, r3]
+  36:Core/Src/joystick.cpp ****                 }
+ 333              		.loc 3 36 25 is_stmt 1 view .LVU74
+ 334 0030 0133     		adds	r3, r3, #1
+ 335 0032 094A     		ldr	r2, .L22+12
+ 336 0034 1380     		strh	r3, [r2]	@ movhi
+ 337              	.LVL15:
+ 338              	.L17:
+  45:Core/Src/joystick.cpp **** 
+ 339              		.loc 3 45 1 is_stmt 0 view .LVU75
+ 340 0036 08BD     		pop	{r3, pc}
+ 341              	.LVL16:
+ 342              	.L20:
+  40:Core/Src/joystick.cpp ****                         gRx2_Data_num = 0;
+ 343              		.loc 3 40 25 is_stmt 1 view .LVU76
+  40:Core/Src/joystick.cpp ****                         gRx2_Data_num = 0;
+ 344              		.loc 3 40 41 is_stmt 0 view .LVU77
+ 345 0038 0023     		movs	r3, #0
+ 346 003a 054A     		ldr	r2, .L22+4
+ 347 003c 1370     		strb	r3, [r2]
+  41:Core/Src/joystick.cpp ****                         fill_JoyData(&gJoy, gJoy_Data_Arr);
+ 348              		.loc 3 41 25 is_stmt 1 view .LVU78
+  41:Core/Src/joystick.cpp ****                         fill_JoyData(&gJoy, gJoy_Data_Arr);
+ 349              		.loc 3 41 39 is_stmt 0 view .LVU79
+ 350 003e 064A     		ldr	r2, .L22+12
+ARM GAS  C:\Users\one\AppData\Local\Temp\cco6VL2H.s 			page 12
+
+
+ 351 0040 1380     		strh	r3, [r2]	@ movhi
+  42:Core/Src/joystick.cpp ****                 }
+ 352              		.loc 3 42 25 is_stmt 1 view .LVU80
+  42:Core/Src/joystick.cpp ****                 }
+ 353              		.loc 3 42 37 is_stmt 0 view .LVU81
+ 354 0042 0649     		ldr	r1, .L22+16
+ 355 0044 0648     		ldr	r0, .L22+20
+ 356              	.LVL17:
+  42:Core/Src/joystick.cpp ****                 }
+ 357              		.loc 3 42 37 view .LVU82
+ 358 0046 FFF7FEFF 		bl	_Z12fill_JoyDataP13JoyStick_DataPh
+ 359              	.LVL18:
+  45:Core/Src/joystick.cpp **** 
+ 360              		.loc 3 45 1 view .LVU83
+ 361 004a F4E7     		b	.L17
+ 362              	.L23:
+ 363              		.align	2
+ 364              	.L22:
+ 365 004c 00000000 		.word	.LANCHOR0
+ 366 0050 00000000 		.word	.LANCHOR3
+ 367 0054 00000000 		.word	.LANCHOR2
+ 368 0058 00000000 		.word	.LANCHOR4
+ 369 005c 00000000 		.word	.LANCHOR5
+ 370 0060 00000000 		.word	.LANCHOR6
+ 371              		.cfi_endproc
+ 372              	.LFE390:
+ 374              		.section	.text._Z10Robot_taskv,"ax",%progbits
+ 375              		.align	1
+ 376              		.global	_Z10Robot_taskv
+ 377              		.syntax unified
+ 378              		.thumb
+ 379              		.thumb_func
+ 380              		.fpu fpv4-sp-d16
+ 382              	_Z10Robot_taskv:
+ 383              	.LFB393:
+  74:Core/Src/joystick.cpp ****         if (blueLedState == 0)
+ 384              		.loc 3 74 1 is_stmt 1 view -0
+ 385              		.cfi_startproc
+ 386              		@ args = 0, pretend = 0, frame = 0
+ 387              		@ frame_needed = 0, uses_anonymous_args = 0
+ 388 0000 08B5     		push	{r3, lr}
+ 389              	.LCFI3:
+ 390              		.cfi_def_cfa_offset 8
+ 391              		.cfi_offset 3, -8
+ 392              		.cfi_offset 14, -4
+  75:Core/Src/joystick.cpp ****         {
+ 393              		.loc 3 75 9 view .LVU85
+  75:Core/Src/joystick.cpp ****         {
+ 394              		.loc 3 75 26 is_stmt 0 view .LVU86
+ 395 0002 534B     		ldr	r3, .L61
+ 396 0004 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+  75:Core/Src/joystick.cpp ****         {
+ 397              		.loc 3 75 9 view .LVU87
+ 398 0006 002B     		cmp	r3, #0
+ 399 0008 41D0     		beq	.L44
+ 400              	.L25:
+  82:Core/Src/joystick.cpp ****                 set_Omega(30);
+ARM GAS  C:\Users\one\AppData\Local\Temp\cco6VL2H.s 			page 13
+
+
+ 401              		.loc 3 82 9 is_stmt 1 view .LVU88
+  82:Core/Src/joystick.cpp ****                 set_Omega(30);
+ 402              		.loc 3 82 18 is_stmt 0 view .LVU89
+ 403 000a 524B     		ldr	r3, .L61+4
+ 404 000c 9B78     		ldrb	r3, [r3, #2]	@ zero_extendqisi2
+  82:Core/Src/joystick.cpp ****                 set_Omega(30);
+ 405              		.loc 3 82 9 view .LVU90
+ 406 000e 002B     		cmp	r3, #0
+ 407 0010 4BD0     		beq	.L45
+ 408              	.L26:
+  85:Core/Src/joystick.cpp ****                 set_Omega(50); //50-250/gJOy.lt*30
+ 409              		.loc 3 85 9 is_stmt 1 view .LVU91
+  85:Core/Src/joystick.cpp ****                 set_Omega(50); //50-250/gJOy.lt*30
+ 410              		.loc 3 85 18 is_stmt 0 view .LVU92
+ 411 0012 504B     		ldr	r3, .L61+4
+ 412 0014 9B78     		ldrb	r3, [r3, #2]	@ zero_extendqisi2
+  85:Core/Src/joystick.cpp ****                 set_Omega(50); //50-250/gJOy.lt*30
+ 413              		.loc 3 85 9 view .LVU93
+ 414 0016 002B     		cmp	r3, #0
+ 415 0018 4CD1     		bne	.L46
+ 416              	.L27:
+  88:Core/Src/joystick.cpp ****         {
+ 417              		.loc 3 88 9 is_stmt 1 view .LVU94
+  88:Core/Src/joystick.cpp ****         {
+ 418              		.loc 3 88 18 is_stmt 0 view .LVU95
+ 419 001a 4E4B     		ldr	r3, .L61+4
+ 420 001c 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+  88:Core/Src/joystick.cpp ****         {
+ 421              		.loc 3 88 9 view .LVU96
+ 422 001e 402B     		cmp	r3, #64
+ 423 0020 4DD0     		beq	.L47
+ 424              	.L28:
+  93:Core/Src/joystick.cpp ****         {
+ 425              		.loc 3 93 9 is_stmt 1 view .LVU97
+  93:Core/Src/joystick.cpp ****         {
+ 426              		.loc 3 93 18 is_stmt 0 view .LVU98
+ 427 0022 4C4B     		ldr	r3, .L61+4
+ 428 0024 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+  93:Core/Src/joystick.cpp ****         {
+ 429              		.loc 3 93 9 view .LVU99
+ 430 0026 202B     		cmp	r3, #32
+ 431 0028 50D0     		beq	.L48
+ 432              	.L29:
+  98:Core/Src/joystick.cpp ****         {
+ 433              		.loc 3 98 9 is_stmt 1 view .LVU100
+  98:Core/Src/joystick.cpp ****         {
+ 434              		.loc 3 98 18 is_stmt 0 view .LVU101
+ 435 002a 4A4B     		ldr	r3, .L61+4
+ 436 002c 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+  98:Core/Src/joystick.cpp ****         {
+ 437              		.loc 3 98 9 view .LVU102
+ 438 002e 802B     		cmp	r3, #128
+ 439 0030 53D0     		beq	.L49
+ 440              	.L30:
+ 105:Core/Src/joystick.cpp ****         {
+ 441              		.loc 3 105 9 is_stmt 1 view .LVU103
+ 105:Core/Src/joystick.cpp ****         {
+ARM GAS  C:\Users\one\AppData\Local\Temp\cco6VL2H.s 			page 14
+
+
+ 442              		.loc 3 105 18 is_stmt 0 view .LVU104
+ 443 0032 484B     		ldr	r3, .L61+4
+ 444 0034 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2
+ 105:Core/Src/joystick.cpp ****         {
+ 445              		.loc 3 105 9 view .LVU105
+ 446 0036 102A     		cmp	r2, #16
+ 447 0038 5AD0     		beq	.L50
+ 448              	.L31:
+ 110:Core/Src/joystick.cpp ****                 forward_left();
+ 449              		.loc 3 110 9 is_stmt 1 view .LVU106
+ 110:Core/Src/joystick.cpp ****                 forward_left();
+ 450              		.loc 3 110 32 is_stmt 0 view .LVU107
+ 451 003a 464B     		ldr	r3, .L61+4
+ 452 003c 93F90530 		ldrsb	r3, [r3, #5]
+ 110:Core/Src/joystick.cpp ****                 forward_left();
+ 453              		.loc 3 110 9 view .LVU108
+ 454 0040 002B     		cmp	r3, #0
+ 455 0042 07DD     		ble	.L32
+ 110:Core/Src/joystick.cpp ****                 forward_left();
+ 456              		.loc 3 110 60 discriminator 1 view .LVU109
+ 457 0044 4349     		ldr	r1, .L61+4
+ 458 0046 8879     		ldrb	r0, [r1, #6]	@ zero_extendqisi2
+ 110:Core/Src/joystick.cpp ****                 forward_left();
+ 459              		.loc 3 110 67 discriminator 1 view .LVU110
+ 460 0048 91F90610 		ldrsb	r1, [r1, #6]
+ 110:Core/Src/joystick.cpp ****                 forward_left();
+ 461              		.loc 3 110 52 discriminator 1 view .LVU111
+ 462 004c 0029     		cmp	r1, #0
+ 463 004e 01DB     		blt	.L32
+ 110:Core/Src/joystick.cpp ****                 forward_left();
+ 464              		.loc 3 110 74 discriminator 2 view .LVU112
+ 465 0050 0028     		cmp	r0, #0
+ 466 0052 51D1     		bne	.L51
+ 467              	.L32:
+ 113:Core/Src/joystick.cpp ****                 forward_right();
+ 468              		.loc 3 113 14 is_stmt 1 view .LVU113
+ 469 0054 002B     		cmp	r3, #0
+ 470 0056 04DD     		ble	.L34
+ 113:Core/Src/joystick.cpp ****                 forward_right();
+ 471              		.loc 3 113 72 is_stmt 0 discriminator 1 view .LVU114
+ 472 0058 3E49     		ldr	r1, .L61+4
+ 473 005a 91F90610 		ldrsb	r1, [r1, #6]
+ 113:Core/Src/joystick.cpp ****                 forward_right();
+ 474              		.loc 3 113 57 discriminator 1 view .LVU115
+ 475 005e 0029     		cmp	r1, #0
+ 476 0060 4DDB     		blt	.L52
+ 477              	.L34:
+ 116:Core/Src/joystick.cpp ****                 back_left();
+ 478              		.loc 3 116 14 is_stmt 1 view .LVU116
+ 479 0062 002B     		cmp	r3, #0
+ 480 0064 4EDB     		blt	.L53
+ 481              	.L35:
+ 119:Core/Src/joystick.cpp ****                 back_right();
+ 482              		.loc 3 119 14 view .LVU117
+ 483 0066 002B     		cmp	r3, #0
+ 484 0068 57DB     		blt	.L54
+ 485              	.L36:
+ARM GAS  C:\Users\one\AppData\Local\Temp\cco6VL2H.s 			page 15
+
+
+ 122:Core/Src/joystick.cpp ****                 forward();
+ 486              		.loc 3 122 14 view .LVU118
+ 487 006a 002B     		cmp	r3, #0
+ 488 006c 5DDC     		bgt	.L55
+ 125:Core/Src/joystick.cpp ****                 back();
+ 489              		.loc 3 125 14 view .LVU119
+ 490 006e 002B     		cmp	r3, #0
+ 491 0070 5EDB     		blt	.L56
+ 128:Core/Src/joystick.cpp ****                 left();
+ 492              		.loc 3 128 14 view .LVU120
+ 128:Core/Src/joystick.cpp ****                 left();
+ 493              		.loc 3 128 37 is_stmt 0 view .LVU121
+ 494 0072 384B     		ldr	r3, .L61+4
+ 495 0074 93F90630 		ldrsb	r3, [r3, #6]
+ 128:Core/Src/joystick.cpp ****                 left();
+ 496              		.loc 3 128 14 view .LVU122
+ 497 0078 002B     		cmp	r3, #0
+ 498 007a 5CDC     		bgt	.L57
+ 131:Core/Src/joystick.cpp ****                 right();
+ 499              		.loc 3 131 14 is_stmt 1 view .LVU123
+ 500 007c 002B     		cmp	r3, #0
+ 501 007e 5DDB     		blt	.L58
+ 134:Core/Src/joystick.cpp ****                 clockwise();
+ 502              		.loc 3 134 14 view .LVU124
+ 503 0080 012A     		cmp	r2, #1
+ 504 0082 5ED0     		beq	.L59
+ 137:Core/Src/joystick.cpp ****                 anticlockwise();
+ 505              		.loc 3 137 14 view .LVU125
+ 506 0084 022A     		cmp	r2, #2
+ 507 0086 5FD0     		beq	.L60
+ 141:Core/Src/joystick.cpp **** }
+ 508              		.loc 3 141 17 view .LVU126
+ 141:Core/Src/joystick.cpp **** }
+ 509              		.loc 3 141 21 is_stmt 0 view .LVU127
+ 510 0088 FFF7FEFF 		bl	_Z4stopv
+ 511              	.LVL19:
+ 512              		.loc 3 142 1 view .LVU128
+ 513 008c 4FE0     		b	.L24
+ 514              	.L44:
+  77:Core/Src/joystick.cpp ****                 HAL_GPIO_WritePin(ledStripBlue_Port, ledStripBlue_Pin, GPIO_PIN_SET);
+ 515              		.loc 3 77 17 is_stmt 1 view .LVU129
+  77:Core/Src/joystick.cpp ****                 HAL_GPIO_WritePin(ledStripBlue_Port, ledStripBlue_Pin, GPIO_PIN_SET);
+ 516              		.loc 3 77 34 is_stmt 0 view .LVU130
+ 517 008e 0022     		movs	r2, #0
+ 518 0090 0421     		movs	r1, #4
+ 519 0092 3148     		ldr	r0, .L61+8
+ 520 0094 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 521              	.LVL20:
+  78:Core/Src/joystick.cpp ****                 blueLedState = 1;
+ 522              		.loc 3 78 17 is_stmt 1 view .LVU131
+  78:Core/Src/joystick.cpp ****                 blueLedState = 1;
+ 523              		.loc 3 78 34 is_stmt 0 view .LVU132
+ 524 0098 0122     		movs	r2, #1
+ 525 009a 0221     		movs	r1, #2
+ 526 009c 2F48     		ldr	r0, .L61+12
+ 527 009e FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 528              	.LVL21:
+ARM GAS  C:\Users\one\AppData\Local\Temp\cco6VL2H.s 			page 16
+
+
+  79:Core/Src/joystick.cpp ****         }
+ 529              		.loc 3 79 17 is_stmt 1 view .LVU133
+  79:Core/Src/joystick.cpp ****         }
+ 530              		.loc 3 79 30 is_stmt 0 view .LVU134
+ 531 00a2 2B4B     		ldr	r3, .L61
+ 532 00a4 0122     		movs	r2, #1
+ 533 00a6 1A70     		strb	r2, [r3]
+ 534 00a8 AFE7     		b	.L25
+ 535              	.L45:
+  83:Core/Src/joystick.cpp **** 
+ 536              		.loc 3 83 17 is_stmt 1 view .LVU135
+  83:Core/Src/joystick.cpp **** 
+ 537              		.loc 3 83 26 is_stmt 0 view .LVU136
+ 538 00aa B3EE0E0A 		vmov.f32	s0, #3.0e+1
+ 539 00ae FFF7FEFF 		bl	_Z9set_Omegaf
+ 540              	.LVL22:
+ 541 00b2 AEE7     		b	.L26
+ 542              	.L46:
+  86:Core/Src/joystick.cpp **** 
+ 543              		.loc 3 86 17 is_stmt 1 view .LVU137
+  86:Core/Src/joystick.cpp **** 
+ 544              		.loc 3 86 26 is_stmt 0 view .LVU138
+ 545 00b4 9FED2A0A 		vldr.32	s0, .L61+16
+ 546 00b8 FFF7FEFF 		bl	_Z9set_Omegaf
+ 547              	.LVL23:
+ 548 00bc ADE7     		b	.L27
+ 549              	.L47:
+  90:Core/Src/joystick.cpp ****         }
+ 550              		.loc 3 90 17 is_stmt 1 view .LVU139
+  90:Core/Src/joystick.cpp ****         }
+ 551              		.loc 3 90 34 is_stmt 0 view .LVU140
+ 552 00be 0122     		movs	r2, #1
+ 553 00c0 4FF40061 		mov	r1, #2048
+ 554 00c4 2748     		ldr	r0, .L61+20
+ 555 00c6 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 556              	.LVL24:
+ 557 00ca AAE7     		b	.L28
+ 558              	.L48:
+  95:Core/Src/joystick.cpp ****         }
+ 559              		.loc 3 95 17 is_stmt 1 view .LVU141
+  95:Core/Src/joystick.cpp ****         }
+ 560              		.loc 3 95 34 is_stmt 0 view .LVU142
+ 561 00cc 0022     		movs	r2, #0
+ 562 00ce 4FF40061 		mov	r1, #2048
+ 563 00d2 2448     		ldr	r0, .L61+20
+ 564 00d4 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 565              	.LVL25:
+ 566 00d8 A7E7     		b	.L29
+ 567              	.L49:
+ 101:Core/Src/joystick.cpp ****                 HAL_GPIO_WritePin(ledStripBlue_Port, ledStripBlue_Pin, GPIO_PIN_RESET);
+ 568              		.loc 3 101 17 is_stmt 1 view .LVU143
+ 101:Core/Src/joystick.cpp ****                 HAL_GPIO_WritePin(ledStripBlue_Port, ledStripBlue_Pin, GPIO_PIN_RESET);
+ 569              		.loc 3 101 34 is_stmt 0 view .LVU144
+ 570 00da 0122     		movs	r2, #1
+ 571 00dc 0421     		movs	r1, #4
+ 572 00de 1E48     		ldr	r0, .L61+8
+ 573 00e0 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ARM GAS  C:\Users\one\AppData\Local\Temp\cco6VL2H.s 			page 17
+
+
+ 574              	.LVL26:
+ 102:Core/Src/joystick.cpp ****         }
+ 575              		.loc 3 102 17 is_stmt 1 view .LVU145
+ 102:Core/Src/joystick.cpp ****         }
+ 576              		.loc 3 102 34 is_stmt 0 view .LVU146
+ 577 00e4 0022     		movs	r2, #0
+ 578 00e6 0221     		movs	r1, #2
+ 579 00e8 1C48     		ldr	r0, .L61+12
+ 580 00ea FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 581              	.LVL27:
+ 582 00ee A0E7     		b	.L30
+ 583              	.L50:
+ 107:Core/Src/joystick.cpp ****         }
+ 584              		.loc 3 107 17 is_stmt 1 view .LVU147
+ 107:Core/Src/joystick.cpp ****         }
+ 585              		.loc 3 107 30 is_stmt 0 view .LVU148
+ 586 00f0 174B     		ldr	r3, .L61
+ 587 00f2 0021     		movs	r1, #0
+ 588 00f4 1970     		strb	r1, [r3]
+ 589 00f6 A0E7     		b	.L31
+ 590              	.L51:
+ 111:Core/Src/joystick.cpp **** 
+ 591              		.loc 3 111 17 is_stmt 1 view .LVU149
+ 111:Core/Src/joystick.cpp **** 
+ 592              		.loc 3 111 29 is_stmt 0 view .LVU150
+ 593 00f8 FFF7FEFF 		bl	_Z12forward_leftv
+ 594              	.LVL28:
+ 595 00fc 17E0     		b	.L24
+ 596              	.L52:
+ 114:Core/Src/joystick.cpp **** 
+ 597              		.loc 3 114 17 is_stmt 1 view .LVU151
+ 114:Core/Src/joystick.cpp **** 
+ 598              		.loc 3 114 30 is_stmt 0 view .LVU152
+ 599 00fe FFF7FEFF 		bl	_Z13forward_rightv
+ 600              	.LVL29:
+ 601 0102 14E0     		b	.L24
+ 602              	.L53:
+ 116:Core/Src/joystick.cpp ****                 back_left();
+ 603              		.loc 3 116 45 discriminator 1 view .LVU153
+ 604 0104 1349     		ldr	r1, .L61+4
+ 605 0106 8879     		ldrb	r0, [r1, #6]	@ zero_extendqisi2
+ 116:Core/Src/joystick.cpp ****                 back_left();
+ 606              		.loc 3 116 52 discriminator 1 view .LVU154
+ 607 0108 91F90610 		ldrsb	r1, [r1, #6]
+ 116:Core/Src/joystick.cpp ****                 back_left();
+ 608              		.loc 3 116 37 discriminator 1 view .LVU155
+ 609 010c 0029     		cmp	r1, #0
+ 610 010e AADB     		blt	.L35
+ 116:Core/Src/joystick.cpp ****                 back_left();
+ 611              		.loc 3 116 59 discriminator 2 view .LVU156
+ 612 0110 0028     		cmp	r0, #0
+ 613 0112 A8D0     		beq	.L35
+ 117:Core/Src/joystick.cpp **** 
+ 614              		.loc 3 117 17 is_stmt 1 view .LVU157
+ 117:Core/Src/joystick.cpp **** 
+ 615              		.loc 3 117 26 is_stmt 0 view .LVU158
+ 616 0114 FFF7FEFF 		bl	_Z9back_leftv
+ARM GAS  C:\Users\one\AppData\Local\Temp\cco6VL2H.s 			page 18
+
+
+ 617              	.LVL30:
+ 618 0118 09E0     		b	.L24
+ 619              	.L54:
+ 119:Core/Src/joystick.cpp ****                 back_right();
+ 620              		.loc 3 119 52 discriminator 1 view .LVU159
+ 621 011a 0E49     		ldr	r1, .L61+4
+ 622 011c 91F90610 		ldrsb	r1, [r1, #6]
+ 119:Core/Src/joystick.cpp ****                 back_right();
+ 623              		.loc 3 119 37 discriminator 1 view .LVU160
+ 624 0120 0029     		cmp	r1, #0
+ 625 0122 A2DA     		bge	.L36
+ 120:Core/Src/joystick.cpp **** 
+ 626              		.loc 3 120 17 is_stmt 1 view .LVU161
+ 120:Core/Src/joystick.cpp **** 
+ 627              		.loc 3 120 27 is_stmt 0 view .LVU162
+ 628 0124 FFF7FEFF 		bl	_Z10back_rightv
+ 629              	.LVL31:
+ 630 0128 01E0     		b	.L24
+ 631              	.L55:
+ 123:Core/Src/joystick.cpp **** 
+ 632              		.loc 3 123 17 is_stmt 1 view .LVU163
+ 123:Core/Src/joystick.cpp **** 
+ 633              		.loc 3 123 24 is_stmt 0 view .LVU164
+ 634 012a FFF7FEFF 		bl	_Z7forwardv
+ 635              	.LVL32:
+ 636              	.L24:
+ 637              		.loc 3 142 1 view .LVU165
+ 638 012e 08BD     		pop	{r3, pc}
+ 639              	.L56:
+ 126:Core/Src/joystick.cpp **** 
+ 640              		.loc 3 126 17 is_stmt 1 view .LVU166
+ 126:Core/Src/joystick.cpp **** 
+ 641              		.loc 3 126 21 is_stmt 0 view .LVU167
+ 642 0130 FFF7FEFF 		bl	_Z4backv
+ 643              	.LVL33:
+ 644 0134 FBE7     		b	.L24
+ 645              	.L57:
+ 129:Core/Src/joystick.cpp **** 
+ 646              		.loc 3 129 17 is_stmt 1 view .LVU168
+ 129:Core/Src/joystick.cpp **** 
+ 647              		.loc 3 129 21 is_stmt 0 view .LVU169
+ 648 0136 FFF7FEFF 		bl	_Z4leftv
+ 649              	.LVL34:
+ 650 013a F8E7     		b	.L24
+ 651              	.L58:
+ 132:Core/Src/joystick.cpp **** 
+ 652              		.loc 3 132 17 is_stmt 1 view .LVU170
+ 132:Core/Src/joystick.cpp **** 
+ 653              		.loc 3 132 22 is_stmt 0 view .LVU171
+ 654 013c FFF7FEFF 		bl	_Z5rightv
+ 655              	.LVL35:
+ 656 0140 F5E7     		b	.L24
+ 657              	.L59:
+ 135:Core/Src/joystick.cpp **** 
+ 658              		.loc 3 135 17 is_stmt 1 view .LVU172
+ 135:Core/Src/joystick.cpp **** 
+ 659              		.loc 3 135 26 is_stmt 0 view .LVU173
+ARM GAS  C:\Users\one\AppData\Local\Temp\cco6VL2H.s 			page 19
+
+
+ 660 0142 FFF7FEFF 		bl	_Z9clockwisev
+ 661              	.LVL36:
+ 662 0146 F2E7     		b	.L24
+ 663              	.L60:
+ 138:Core/Src/joystick.cpp **** 
+ 664              		.loc 3 138 17 is_stmt 1 view .LVU174
+ 138:Core/Src/joystick.cpp **** 
+ 665              		.loc 3 138 30 is_stmt 0 view .LVU175
+ 666 0148 FFF7FEFF 		bl	_Z13anticlockwisev
+ 667              	.LVL37:
+ 668 014c EFE7     		b	.L24
+ 669              	.L62:
+ 670 014e 00BF     		.align	2
+ 671              	.L61:
+ 672 0150 00000000 		.word	.LANCHOR7
+ 673 0154 00000000 		.word	.LANCHOR6
+ 674 0158 00000240 		.word	1073872896
+ 675 015c 00080240 		.word	1073874944
+ 676 0160 00004842 		.word	1112014848
+ 677 0164 00040240 		.word	1073873920
+ 678              		.cfi_endproc
+ 679              	.LFE393:
+ 681              		.section	.text._GLOBAL__sub_I_blueLedState,"ax",%progbits
+ 682              		.align	1
+ 683              		.syntax unified
+ 684              		.thumb
+ 685              		.thumb_func
+ 686              		.fpu fpv4-sp-d16
+ 688              	_GLOBAL__sub_I_blueLedState:
+ 689              	.LFB404:
+ 690              		.loc 3 142 1 is_stmt 1 view -0
+ 691              		.cfi_startproc
+ 692              		@ args = 0, pretend = 0, frame = 0
+ 693              		@ frame_needed = 0, uses_anonymous_args = 0
+ 694 0000 08B5     		push	{r3, lr}
+ 695              	.LCFI4:
+ 696              		.cfi_def_cfa_offset 8
+ 697              		.cfi_offset 3, -8
+ 698              		.cfi_offset 14, -4
+ 699              		.loc 3 142 1 is_stmt 0 view .LVU177
+ 700 0002 4FF6FF71 		movw	r1, #65535
+ 701 0006 0120     		movs	r0, #1
+ 702 0008 FFF7FEFF 		bl	_Z41__static_initialization_and_destruction_0ii
+ 703              	.LVL38:
+ 704 000c 08BD     		pop	{r3, pc}
+ 705              		.cfi_endproc
+ 706              	.LFE404:
+ 708              		.section	.init_array,"aw",%init_array
+ 709              		.align	2
+ 710 0000 00000000 		.word	_GLOBAL__sub_I_blueLedState(target1)
+ 711              		.global	gJoy_Data_Arr
+ 712              		.global	gJoy
+ 713              		.global	joystick
+ 714              		.global	blueLedState
+ 715              		.section	.bss._ZL13gRx2_Data_num,"aw",%nobits
+ 716              		.align	1
+ 717              		.set	.LANCHOR4,. + 0
+ARM GAS  C:\Users\one\AppData\Local\Temp\cco6VL2H.s 			page 20
+
+
+ 720              	_ZL13gRx2_Data_num:
+ 721 0000 0000     		.space	2
+ 722              		.section	.bss._ZL15gStart_Byte_Rx2,"aw",%nobits
+ 723              		.set	.LANCHOR3,. + 0
+ 726              	_ZL15gStart_Byte_Rx2:
+ 727 0000 00       		.space	1
+ 728              		.section	.bss._ZL8gRx2Data,"aw",%nobits
+ 729              		.set	.LANCHOR2,. + 0
+ 732              	_ZL8gRx2Data:
+ 733 0000 00       		.space	1
+ 734              		.section	.bss._ZL9gJoyStick,"aw",%nobits
+ 735              		.align	2
+ 736              		.set	.LANCHOR0,. + 0
+ 739              	_ZL9gJoyStick:
+ 740 0000 00000000 		.space	32
+ 740      00000000 
+ 740      00000000 
+ 740      00000000 
+ 740      00000000 
+ 741              		.section	.bss.gJoy,"aw",%nobits
+ 742              		.align	2
+ 743              		.set	.LANCHOR6,. + 0
+ 746              	gJoy:
+ 747 0000 00000000 		.space	8
+ 747      00000000 
+ 748              		.section	.bss.gJoy_Data_Arr,"aw",%nobits
+ 749              		.align	2
+ 750              		.set	.LANCHOR5,. + 0
+ 753              	gJoy_Data_Arr:
+ 754 0000 00000000 		.space	8
+ 754      00000000 
+ 755              		.section	.bss.joystick,"aw",%nobits
+ 756              		.align	2
+ 757              		.set	.LANCHOR1,. + 0
+ 760              	joystick:
+ 761 0000 00000000 		.space	4
+ 762              		.section	.data.blueLedState,"aw"
+ 763              		.set	.LANCHOR7,. + 0
+ 766              	blueLedState:
+ 767 0000 01       		.byte	1
+ 768              		.text
+ 769              	.Letext0:
+ 770              		.file 4 "c:\\vsarm\\armcc\\arm-none-eabi\\include\\machine\\_default_types.h"
+ 771              		.file 5 "c:\\vsarm\\armcc\\arm-none-eabi\\include\\sys\\_stdint.h"
+ 772              		.file 6 "Drivers/CMSIS/Include/core_cm4.h"
+ 773              		.file 7 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h"
+ 774              		.file 8 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h"
+ 775              		.file 9 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h"
+ 776              		.file 10 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h"
+ 777              		.file 11 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h"
+ 778              		.file 12 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h"
+ 779              		.file 13 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h"
+ 780              		.file 14 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h"
+ 781              		.file 15 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h"
+ 782              		.file 16 "Core/Inc/usart.h"
+ 783              		.file 17 "Core/Inc/tim.h"
+ 784              		.file 18 "c:\\vsarm\\armcc\\lib\\gcc\\arm-none-eabi\\9.3.1\\include\\stddef.h"
+ARM GAS  C:\Users\one\AppData\Local\Temp\cco6VL2H.s 			page 21
+
+
+ 785              		.file 19 "c:\\vsarm\\armcc\\arm-none-eabi\\include\\sys\\_types.h"
+ 786              		.file 20 "c:\\vsarm\\armcc\\arm-none-eabi\\include\\sys\\reent.h"
+ 787              		.file 21 "c:\\vsarm\\armcc\\arm-none-eabi\\include\\sys\\lock.h"
+ 788              		.file 22 "c:\\vsarm\\armcc\\arm-none-eabi\\include\\c++\\9.3.1\\bits\\cpp_type_traits.h"
+ 789              		.file 23 "c:\\vsarm\\armcc\\arm-none-eabi\\include\\c++\\9.3.1\\cmath"
+ 790              		.file 24 "c:\\vsarm\\armcc\\arm-none-eabi\\include\\c++\\9.3.1\\bits\\std_abs.h"
+ 791              		.file 25 "c:\\vsarm\\armcc\\arm-none-eabi\\include\\c++\\9.3.1\\arm-none-eabi\\thumb\\v7e-m+fp\\ha
+ 792              		.file 26 "c:\\vsarm\\armcc\\arm-none-eabi\\include\\math.h"
+ 793              		.file 27 "c:\\vsarm\\armcc\\arm-none-eabi\\include\\stdlib.h"
+ 794              		.file 28 "c:\\vsarm\\armcc\\arm-none-eabi\\include\\c++\\9.3.1\\math.h"
+ 795              		.file 29 "Core/Inc/actuator.h"
+ 796              		.file 30 "<built-in>"
+ARM GAS  C:\Users\one\AppData\Local\Temp\cco6VL2H.s 			page 22
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 joystick.cpp
-C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s:18     .text._ZN8JoyStickD2Ev:00000000 $t
-C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s:25     .text._ZN8JoyStickD2Ev:00000000 _ZN8JoyStickD2Ev
-C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s:25     .text._ZN8JoyStickD2Ev:00000000 _ZN8JoyStickD1Ev
-C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s:42     .text._ZN15JoyStick_HandleD2Ev:00000000 $t
-C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s:49     .text._ZN15JoyStick_HandleD2Ev:00000000 _ZN15JoyStick_HandleD2Ev
-C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s:49     .text._ZN15JoyStick_HandleD2Ev:00000000 _ZN15JoyStick_HandleD1Ev
-C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s:65     .text._Z41__static_initialization_and_destruction_0ii:00000000 $t
-C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s:71     .text._Z41__static_initialization_and_destruction_0ii:00000000 _Z41__static_initialization_and_destruction_0ii
-C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s:140    .text._Z41__static_initialization_and_destruction_0ii:00000034 $d
-C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s:150    .text._ZN8JoyStick4initEv:00000000 $t
-C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s:157    .text._ZN8JoyStick4initEv:00000000 _ZN8JoyStick4initEv
-C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s:186    .text._ZN8JoyStick4initEv:00000018 $d
-C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s:192    .text._Z12fill_JoyDataP13JoyStick_DataPh:00000000 $t
-C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s:199    .text._Z12fill_JoyDataP13JoyStick_DataPh:00000000 _Z12fill_JoyDataP13JoyStick_DataPh
-C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s:237    .text.HAL_UART_RxCpltCallback:00000000 $t
-C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s:244    .text.HAL_UART_RxCpltCallback:00000000 HAL_UART_RxCpltCallback
-C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s:316    .text.HAL_UART_RxCpltCallback:00000050 $d
-C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s:326    .text._Z10Robot_taskv:00000000 $t
-C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s:333    .text._Z10Robot_taskv:00000000 _Z10Robot_taskv
-C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s:521    .text._Z10Robot_taskv:000000fc $d
-C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s:528    .text._GLOBAL__sub_I_pneumaticState:00000000 $t
-C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s:534    .text._GLOBAL__sub_I_pneumaticState:00000000 _GLOBAL__sub_I_pneumaticState
-C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s:555    .init_array:00000000 $d
-C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s:599    .bss.gJoy_Data_Arr:00000000 gJoy_Data_Arr
-C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s:592    .bss.gJoy:00000000 gJoy
-C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s:606    .bss.joystick:00000000 joystick
-C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s:611    .bss.pneumaticState:00000000 pneumaticState
-C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s:562    .bss._ZL13gRx2_Data_num:00000000 $d
-C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s:566    .bss._ZL13gRx2_Data_num:00000000 _ZL13gRx2_Data_num
-C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s:572    .bss._ZL15gStart_Byte_Rx2:00000000 _ZL15gStart_Byte_Rx2
-C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s:573    .bss._ZL15gStart_Byte_Rx2:00000000 $d
-C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s:578    .bss._ZL8gRx2Data:00000000 _ZL8gRx2Data
-C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s:579    .bss._ZL8gRx2Data:00000000 $d
-C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s:581    .bss._ZL9gJoyStick:00000000 $d
-C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s:585    .bss._ZL9gJoyStick:00000000 _ZL9gJoyStick
-C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s:588    .bss.gJoy:00000000 $d
-C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s:595    .bss.gJoy_Data_Arr:00000000 $d
-C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s:602    .bss.joystick:00000000 $d
-C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s:612    .bss.pneumaticState:00000000 $d
+C:\Users\one\AppData\Local\Temp\cco6VL2H.s:18     .text._ZN8JoyStickD2Ev:00000000 $t
+C:\Users\one\AppData\Local\Temp\cco6VL2H.s:26     .text._ZN8JoyStickD2Ev:00000000 _ZN8JoyStickD2Ev
+C:\Users\one\AppData\Local\Temp\cco6VL2H.s:26     .text._ZN8JoyStickD2Ev:00000000 _ZN8JoyStickD1Ev
+C:\Users\one\AppData\Local\Temp\cco6VL2H.s:43     .text._ZN15JoyStick_HandleD2Ev:00000000 $t
+C:\Users\one\AppData\Local\Temp\cco6VL2H.s:50     .text._ZN15JoyStick_HandleD2Ev:00000000 _ZN15JoyStick_HandleD2Ev
+C:\Users\one\AppData\Local\Temp\cco6VL2H.s:50     .text._ZN15JoyStick_HandleD2Ev:00000000 _ZN15JoyStick_HandleD1Ev
+C:\Users\one\AppData\Local\Temp\cco6VL2H.s:72     .text._Z41__static_initialization_and_destruction_0ii:00000000 $t
+C:\Users\one\AppData\Local\Temp\cco6VL2H.s:78     .text._Z41__static_initialization_and_destruction_0ii:00000000 _Z41__static_initialization_and_destruction_0ii
+C:\Users\one\AppData\Local\Temp\cco6VL2H.s:158    .text._Z41__static_initialization_and_destruction_0ii:00000034 $d
+C:\Users\one\AppData\Local\Temp\cco6VL2H.s:168    .text._ZN8JoyStick4initEv:00000000 $t
+C:\Users\one\AppData\Local\Temp\cco6VL2H.s:175    .text._ZN8JoyStick4initEv:00000000 _ZN8JoyStick4initEv
+C:\Users\one\AppData\Local\Temp\cco6VL2H.s:215    .text._ZN8JoyStick4initEv:00000014 $d
+C:\Users\one\AppData\Local\Temp\cco6VL2H.s:221    .text._Z12fill_JoyDataP13JoyStick_DataPh:00000000 $t
+C:\Users\one\AppData\Local\Temp\cco6VL2H.s:228    .text._Z12fill_JoyDataP13JoyStick_DataPh:00000000 _Z12fill_JoyDataP13JoyStick_DataPh
+C:\Users\one\AppData\Local\Temp\cco6VL2H.s:275    .text.HAL_UART_RxCpltCallback:00000000 $t
+C:\Users\one\AppData\Local\Temp\cco6VL2H.s:282    .text.HAL_UART_RxCpltCallback:00000000 HAL_UART_RxCpltCallback
+C:\Users\one\AppData\Local\Temp\cco6VL2H.s:365    .text.HAL_UART_RxCpltCallback:0000004c $d
+C:\Users\one\AppData\Local\Temp\cco6VL2H.s:375    .text._Z10Robot_taskv:00000000 $t
+C:\Users\one\AppData\Local\Temp\cco6VL2H.s:382    .text._Z10Robot_taskv:00000000 _Z10Robot_taskv
+C:\Users\one\AppData\Local\Temp\cco6VL2H.s:672    .text._Z10Robot_taskv:00000150 $d
+C:\Users\one\AppData\Local\Temp\cco6VL2H.s:682    .text._GLOBAL__sub_I_blueLedState:00000000 $t
+C:\Users\one\AppData\Local\Temp\cco6VL2H.s:688    .text._GLOBAL__sub_I_blueLedState:00000000 _GLOBAL__sub_I_blueLedState
+C:\Users\one\AppData\Local\Temp\cco6VL2H.s:709    .init_array:00000000 $d
+C:\Users\one\AppData\Local\Temp\cco6VL2H.s:753    .bss.gJoy_Data_Arr:00000000 gJoy_Data_Arr
+C:\Users\one\AppData\Local\Temp\cco6VL2H.s:746    .bss.gJoy:00000000 gJoy
+C:\Users\one\AppData\Local\Temp\cco6VL2H.s:760    .bss.joystick:00000000 joystick
+C:\Users\one\AppData\Local\Temp\cco6VL2H.s:766    .data.blueLedState:00000000 blueLedState
+C:\Users\one\AppData\Local\Temp\cco6VL2H.s:716    .bss._ZL13gRx2_Data_num:00000000 $d
+C:\Users\one\AppData\Local\Temp\cco6VL2H.s:720    .bss._ZL13gRx2_Data_num:00000000 _ZL13gRx2_Data_num
+C:\Users\one\AppData\Local\Temp\cco6VL2H.s:726    .bss._ZL15gStart_Byte_Rx2:00000000 _ZL15gStart_Byte_Rx2
+C:\Users\one\AppData\Local\Temp\cco6VL2H.s:727    .bss._ZL15gStart_Byte_Rx2:00000000 $d
+C:\Users\one\AppData\Local\Temp\cco6VL2H.s:732    .bss._ZL8gRx2Data:00000000 _ZL8gRx2Data
+C:\Users\one\AppData\Local\Temp\cco6VL2H.s:733    .bss._ZL8gRx2Data:00000000 $d
+C:\Users\one\AppData\Local\Temp\cco6VL2H.s:735    .bss._ZL9gJoyStick:00000000 $d
+C:\Users\one\AppData\Local\Temp\cco6VL2H.s:739    .bss._ZL9gJoyStick:00000000 _ZL9gJoyStick
+C:\Users\one\AppData\Local\Temp\cco6VL2H.s:742    .bss.gJoy:00000000 $d
+C:\Users\one\AppData\Local\Temp\cco6VL2H.s:749    .bss.gJoy_Data_Arr:00000000 $d
+C:\Users\one\AppData\Local\Temp\cco6VL2H.s:756    .bss.joystick:00000000 $d
                            .group:00000000 _ZN8JoyStickD5Ev
                            .group:00000000 _ZN15JoyStick_HandleD5Ev
 
@@ -973,17 +1265,17 @@ __dso_handle
 huart2
 HAL_UART_Receive_DMA
 _Z4stopv
-_Z9set_Omegaf
 HAL_GPIO_WritePin
+_Z9set_Omegaf
 _Z12forward_leftv
 _Z13forward_rightv
 _Z9back_leftv
 _Z10back_rightv
 _Z7forwardv
-ARM GAS  C:\Users\Aasman\AppData\Local\Temp\ccXUCwvb.s 			page 18
-
-
 _Z4backv
+ARM GAS  C:\Users\one\AppData\Local\Temp\cco6VL2H.s 			page 23
+
+
 _Z4leftv
 _Z5rightv
 _Z9clockwisev
